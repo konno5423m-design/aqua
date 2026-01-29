@@ -1,0 +1,16 @@
+/* PC */
+@media (min-width:992px){
+	
+.details-wrap{
+	width:1200;
+	height:500;
+}
+	.kakou{
+	margin-top:50px;
+    display: flex;
+}
+
+
+
+}
+

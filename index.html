@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-	   <meta charset="uft-8">
-	
+
+  <meta charset="UTF-8">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>マッサージ住吉区我孫子長居｜リラクゼーションあくあ</title>
+
+  <!-- 説明文（SEO＆SNS用） -->
+  <meta name="description" content="住吉区のマッサージ店。肩こり・腰痛。完全予約制、当日予約OK。">
+
+  <!-- 正規URL（SEOの重複対策） -->
+  <link rel="canonical" href="https://example.com/">
+
+  <!-- ファビコン -->
+  <link rel="icon" href="img/favicon.ico">
+
+  <!-- OGP（SNSでシェアされたとき用） -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="あくあ｜リラクゼーション">
+  <meta property="og:description" content="住吉区我孫子。完全予約制で安心。">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:image" content="https://example.com/img/ogp.jpg">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/main.css">
-	   <!--メタデータ-->
-	   <meta name="viewport" content="width=device-width, user-scalable=1.0, initial-scale=1.0"
-	   <meta name="keywords" content="マッサージ,大阪市,住吉区,長居,あびこ,タイ古式"></meta>
-<title>大阪市住吉区のマッサージ店　長居リラクゼーション　あくあ</title>
+<link rel="stylesheet" href="css/top.css">
+<link rel="stylesheet" href="css/resposive.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+
 
 </head>
 
 
-<header>
-<div class="fixed">
-<img src="https://nagai-aqua.com/wp-content/themes/lp_aqua/images/logo.webp" width="160"height="100"href="#aqua.html"class="hover1" id="logo">
+<header class="header">
+<img src="https://nagai-aqua.com/wp-content/themes/lp_aqua/images/logo.webp" href="#aqua.html"class="hover1" id="logo">
 
-<div class="box1">
-<div class="boxtitle"><p>ご予約はこちらから</p></div>
-
-  <div class="icon">
-	<button class="tell"><a href="https://sttmtmbb9echlrdsulwd.stores.jp/reserve/dopeweb/services#pageContent"><img src="image/電話.png" 	width="60"height="60"class="hover1"></a></button>
-
-	<button class="inst"><a href="https://edisone.jp/nagaiaqua"><img src="image/インスタ.png" 	width="60"height="60"class="hover1"></a></button>
-
-
-	<button class="line"><a href="https://app.squareup.com/appointments/book/8qyfp0u6imbo71/L945YTJAV5KN6/start"><img src="image/line1.png" 	width="80"height="80"class="hover1"></a></button>
-</div>
-
-</div>	
 
 <div class="hamburger-demo-menubox">
 		<input id="hamburger-demo1" type="checkbox" class="input-hidden">
@@ -38,7 +54,7 @@
 		</label>
 		<div class="hamburger-demo-menuwrap">
 			<ul class="hamburger-demo-menulist">
-				<li><a href="aqua.html">TOP</a></li>
+				<li><a href="main.html">TOP</a></li>
 				<li><a href="us.html">当店について</a></li>
 				<li><a href="menu.html">メニュー＆料金表</a></li>
 				<li><a href="contact.html">ご予約・お問い合わせ</a></li>
@@ -50,81 +66,71 @@
 </header>
 
 <body>
-
-
-<div class="details-wrap">
-  <details class="details js-details">
-    <summary class="details-summary js-details-summary">
- <a href="us.html"><img src="image/heroimg.jpg" alt="当店について" width="880" height="500"><p class="con1">当店について</p></a></summary>
-
-  </details>
-
-
-
-  <details class="details js-details">
-    <summary class="details-summary js-details-summary">
-<a href="time.html"><img src="image/足つぼ.jpg" alt="営業時間" width="880" height="500"> <p class="con1">営業時間</p></a></summary>
-    <div class="details-content js-details-content">
-      
+<div class="carousel">
+  <!-- スライドのリスト -->
+  <div class="contains">
+    <!-- スライドを選択するためのラジオボタンリスト。 -->
+    <!-- 数は増減しても構わないです。 最初は1番目を選択状態(checked)にします。-->
+    <!-- Slide各ラジオボタンに個別のidを定義して、nameはすべて同じ値にします。 -->
+    <input class="slide_select" type="radio" id="SlideA" name="slide_check" checked />
+    <input class="slide_select" type="radio" id="SlideB" name="slide_check" />
+    <input class="slide_select" type="radio" id="SlideC" name="slide_check" />
+    <input class="slide_select" type="radio" id="SlideD" name="slide_check" />
+    <!-- スライド -->
+    <!-- 上のラジオボックスと同じ数だけ記述します。-->
+    <div class="slide">
+      <!-- スライドの前へ、次へとスクロールさせるボタン -->
+      <div class="scroll_controler">
+        <!-- 前へボタン forで戻る先のラジオボタンのidを書きます。-->
+        <!-- 先頭要素なので、最後のスライドのidである"SlideD"を書いています。 -->
+        <label class="scroll_button scroll_prev" for="SlideD"></label>
+        <!-- 次へボタン 上と同様にforで進む先のラジオボタンのidを書きます。-->
+        <!-- 進み先は2番目の要素なので、2番目のスライドのid"SlideB"を書いています。 -->
+        <label class="scroll_button scroll_next" for="SlideB"></label>
+      </div>
+      <!-- スライドの内容（ここでは画像）を記述します。 -->
+      <!-- div要素に変えれば文字を加えることもできます。 -->
+      <img src="image/back.jpg">
     </div>
-  </details>
-  <details class="details js-details">
-    <summary class="details-summary js-details-summary">
-<a href="menu.html"><img src="image/室内.png" alt="メニュー料金" width="880" height="500"> <p class="con1">メニュー＆料金表</p></a></summary>
-    <div class="details-content js-details-content">
-     
+    <!-- スライド（2番目）内容は1個めと同じ -->
+    <div class="slide">
+      <div class="controler_scroll">
+        <label class="scroll_button scroll_prev" for="SlideA"></label>
+        <label class="scroll_button scroll_next" for="SlideC"></label>
+      </div>
+      <img src="https://picsum.photos/320/180?random=2">
     </div>
-  </details>
-  <details class="details js-details">
-    <summary class="details-summary js-details-summary">
-<a href="access.html"><img src="image/駐車場.png" alt="2つ目のアコーディオンのタイトル" width="880" height="500"><p class="con1">アクセス</p> </a></summary>
-    <div class="details-content js-details-content">
-   
+    <!-- スライド（3番目）内容は1個めと同じ -->
+    <div class="slide">
+      <div class="controler_scroll">
+        <label class="scroll_button scroll_prev" for="SlideB"></label>
+        <label class="scroll_button scroll_next" for="SlideD"></label>
+      </div>
+      <img src="https://picsum.photos/320/180?random=3">
     </div>
-  </details>
-  <details class="details js-details">
-    <summary class="details-summary js-details-summary">
-<a href="contact.html"><img src="image/頭皮.png" alt="2つ目のアコーディオンのタイトル" width="880" height="500"><p class="con1">お問い合わせ</p></a> </summary>
-    <div class="details-content js-details-content">
-
+    <!-- スライド（4番目）内容は1個めと同じ -->
+    <div class="slide">
+      <div class="controler_scroll">
+        <label class="scroll_button scroll_prev" for="SlideC"></label>
+        <label class="scroll_button scroll_next" for="SlideA"></label>
+      </div>
+      <img src="https://picsum.photos/320/180?random=4">
     </div>
-  </details>
+    <!-- スライド移動用ボタン -->
+    <div class="move_controler">
+      <!-- 1個目のスライドのボタン -->
+      <!-- 一番上のラジオボタンの1個目のスライドのid”A”をforに定義します-->
+      <label class="button_move" for="SlideA"></label>
+      <label class="button_move" for="SlideB"></label>
+      <label class="button_move" for="SlideC"></label>
+      <label class="button_move" for="SlideD"></label>
+    </div>
+  </div>
 </div>
 
-<article>
-<div class=con2>
-<section class="recomends"><h1> "もみほぐし"は<br>お任せ下さい！</h1>
-
-	
-	<div class=top><h3>完全予約制プライベートサロン</h3>
-
-通常のボディケアに<br>本場タイ古式、ストレッチなどを<br>取り入れた施術を得意としています
-<br>お客様それぞれに合わせた施術で<br>疲れたお身体を丁寧にケアさせて頂きます。
-
-<br>初めての方も安心してお任せください!</p>
-	</div>
-<h4>お一人様ずつの施術になりますので<br>
-事前ご予約をお願いしております
-<h4 class="kasen">*確認が遅れる場合があります*<br>お急ぎはお電話にてお願い致します</h5>
-</h4>
 
 
 
-</section>
-</div>
-
-<div class= "kasanari">
-<div class="menuran">
-
-
-	<div><img src="image/メニュー概要.jpg"width="480"height="650"></div>
-
-
-
-
-<div class="itiranwaku">
-<a href="menu.html" ><button class="itiran"><p>メニュー<br>料金一覧</p></button></a>
-</div>
 
 </div>
 </div>
@@ -158,9 +164,25 @@ Instagram　または　Facebook
 地下鉄我孫子駅から長居方面に歩き、ライフあびこ店より一つ南（自転車屋さん角）を左折（西方面）一方通行路を逆走する形で歩いていただくとタイムズの駐車場。その先にランドリーが左側に見えます。その反対のシャーメゾンKS　というマンションの１０３号室です
 <br>◇店舗前に専用駐車場１台あり<br>◇TEL：07043871027 <br>◇大阪市住吉区我孫子2-4-10 シャーメゾンKS 103号</p>
 	<div class="map">
-	<iframe style=" width:400;height:200; "src="https://edisone.jp/nagaiaqua"></iframe>
+	<iframe src="https://edisone.jp/nagaiaqua"></iframe>
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d821.0231596511179!2d135.50985573181853!3d34.601818900000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1766889358583!5m2!1sja!2sjp"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 	</div>
+</section>
+
+<section class="reserved">
+<div class="btn-wrap btn-wrap-pc-sp">
+  <a href="" class="btn btn-contact">
+    <i class="fas fa-mobile-alt fa-position-left"></i>
+    Web予約
+    <i class="fas fa-angle-right fa-position-right"></i>
+  </a>
+  <a href="" class="btn btn-tel">
+    <i class="fas fa-phone-volume fa-position-left"></i>
+    電話予約<br>
+    <i class="fas fa-angle-right fa-position-right"></i>
+  </a>
+</div>
+
 </section>
 
 </article>	
@@ -172,6 +194,8 @@ Instagram　または　Facebook
 <div class="footmenu">
 <p>当店について</p>
 <p>お問い合わせ</p>
+<p><a href="https://edisone.jp/nagaiaqua"><i class="fa-brands fa-instagram" style="color: #ffaa33;"></i>Instagram</a></p>
+
 </div>
 <small>Copyright 2025 Nagai Realuxetion AQUA All right reserved.</small>
 </footer>
