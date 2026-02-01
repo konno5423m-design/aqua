@@ -72,3 +72,4 @@ carousel.addEventListener("touchend", () => {
 
   dragging = false;
 });
+});

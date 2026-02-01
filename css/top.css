@@ -140,8 +140,8 @@ text-align: center;
 display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1px 0;
-i
+  margin: 0;
+
 }
 
 
@@ -154,7 +154,7 @@ i
 
 #shop{
   margin-top: 8px;
-  font-size: 20px;
+  font-size: 25px;
   inset: 0;
   margin: 0;
   color: #111;
@@ -162,7 +162,7 @@ i
 }
 
 #shop2{
-  font-size: 30px;
+  font-size: 36px;
     margin-bottom: 16px;
     margin-left: 10px;
   color: #111;
