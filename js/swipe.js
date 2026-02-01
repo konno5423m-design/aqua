@@ -47,30 +47,28 @@ document.addEventListener("DOMContentLoaded", () => {
   // =====================
   // スワイプ処理
   // =====================
-  let startX = 0;
-  let currentX = 0;
-  let dragging = false;
+let startX = 0;
+let currentX = 0;
+let dragging = false;
 
-  track.addEventListener("touchstart", e => {
-    startX = e.touches[0].clientX;
-    dragging = true;
-  }, { passive: true });
+carousel.addEventListener("touchstart", e => {
+  startX = e.touches[0].clientX;
+  dragging = true;
+}, { passive: true });
 
-  track.addEventListener("touchmove", e => {
-    if (!dragging) return;
-    currentX = e.touches[0].clientX;
-  }, { passive: true });
+carousel.addEventListener("touchmove", e => {
+  if (!dragging) return;
+  currentX = e.touches[0].clientX;
+}, { passive: true });
 
-  track.addEventListener("touchend", () => {
-    if (!dragging) return;
+carousel.addEventListener("touchend", () => {
+  if (!dragging) return;
 
-    const diff = currentX - startX;
+  const diff = currentX - startX;
 
-    if (Math.abs(diff) > 50) {
-      diff < 0 ? next() : prev();
-    }
+  if (Math.abs(diff) > 50) {
+    diff < 0 ? next() : prev();
+  }
 
-    dragging = false;
-  });
-
+  dragging = false;
 });

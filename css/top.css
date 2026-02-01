@@ -67,15 +67,32 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10;
-
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
   background: rgba(0,0,0,.4);
-  color: #fff;
   border: none;
-  font-size: 32px;
-  padding: 6px 12px;
   cursor: pointer;
+  z-index: 10;
 }
+
+.prev::before,
+.next::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: translate(-50%, -50%) rotate(225deg);
+}
+
+.next::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
 .prev {
   left: 10px;
 }
@@ -84,6 +101,10 @@
   right: 10px;
 }
 
+.prev:hover,
+.next:hover {
+  background: rgba(0,0,0,.6);
+}
 .face{
   margin-top: 10px;
 text-align: center;
