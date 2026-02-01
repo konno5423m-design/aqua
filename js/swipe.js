@@ -1,60 +1,76 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const carousel = document.querySelector("#carousel");
+  const carousel = document.getElementById("carousel");
   const track = carousel.querySelector(".track");
-  const slides = Array.from(track.children);
+  const slides = carousel.querySelectorAll(".slide");
   const prevBtn = carousel.querySelector(".prev");
   const nextBtn = carousel.querySelector(".next");
-  const dotsContainer = carousel.querySelector(".dots");
+  const dotsWrap = carousel.querySelector(".dots");
 
   let index = 0;
-  let isMoving = false;
+  const slideCount = slides.length;
 
+  // =====================
   // ドット生成
+  // =====================
   slides.forEach((_, i) => {
     const dot = document.createElement("span");
     dot.className = "dot";
     if (i === 0) dot.classList.add("active");
     dot.addEventListener("click", () => moveTo(i));
-    dotsContainer.appendChild(dot);
+    dotsWrap.appendChild(dot);
   });
 
-  const dots = dotsContainer.children;
+  const dots = dotsWrap.querySelectorAll(".dot");
 
-  function moveTo(i) {
-    if (isMoving) return;
-    isMoving = true;
-
-    index = (i + slides.length) % slides.length;
-    track.style.transform = `translateX(-${index * 100}%)`;
-
-    [...dots].forEach(d => d.classList.remove("active"));
+  function updateDots() {
+    dots.forEach(d => d.classList.remove("active"));
     dots[index].classList.add("active");
-
-    setTimeout(() => {
-      isMoving = false;
-    }, 400); // transitionと同じ時間
   }
 
-  nextBtn.addEventListener("click", () => moveTo(index + 1));
-  prevBtn.addEventListener("click", () => moveTo(index - 1));
+  function moveTo(i) {
+    index = Math.max(0, Math.min(i, slideCount - 1));
+    track.style.transform = `translateX(-${index * 100}%)`;
+    updateDots();
+  }
 
-  /* スワイプ */
+  function next() {
+    if (index < slideCount - 1) moveTo(index + 1);
+  }
+
+  function prev() {
+    if (index > 0) moveTo(index - 1);
+  }
+
+  nextBtn.addEventListener("click", next);
+  prevBtn.addEventListener("click", prev);
+
+  // =====================
+  // スワイプ処理
+  // =====================
   let startX = 0;
+  let currentX = 0;
+  let dragging = false;
 
   track.addEventListener("touchstart", e => {
     startX = e.touches[0].clientX;
-  });
+    dragging = true;
+  }, { passive: true });
 
-  track.addEventListener("touchend", e => {
-    const endX = e.changedTouches[0].clientX;
-    const diff = startX - endX;
+  track.addEventListener("touchmove", e => {
+    if (!dragging) return;
+    currentX = e.touches[0].clientX;
+  }, { passive: true });
 
-    if (Math.abs(diff) < 50) return;
+  track.addEventListener("touchend", () => {
+    if (!dragging) return;
 
-    if (diff > 0) {
-      moveTo(index + 1);
-    } else {
-      moveTo(index - 1);
+    const diff = currentX - startX;
+
+    if (Math.abs(diff) > 50) {
+      diff < 0 ? next() : prev();
     }
+
+    dragging = false;
   });
+
 });

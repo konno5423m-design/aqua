@@ -27,8 +27,32 @@
 .contener1{
 	display: flex;
 }
+.carousel {
+  padding: 0px 20px;
+    height: auto;
+    overflow: visible;
+  }
+
+  .track {
+    transform: none !important;
+    transition: none;
+  }
+
+  .slide {
+    min-width: auto;
+    width: 33.333%;
+  }
+
+  .prev,
+  .next,
+  .dots {
+    display: none;
+  }
+  
+
+
+
 
 
 
 }
-
