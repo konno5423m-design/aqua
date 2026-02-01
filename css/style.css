@@ -12,8 +12,11 @@ body{
 	margin:0;
 	padding:0;
 	background-color:#ffffff;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  font-family: "Pretendard", "Noto Sans JP", system-ui, sans-serif;}
 
-}
+
 
 html{
 	font-size: 18px;
@@ -26,9 +29,28 @@ line-height: 1.7;
 h1,h2,h3,h4,h5,p,a{
 	margin: 0;
 }
+h1{
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+font-weight: 600;
+}
+
+h2 {
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
 
 
+h3 {
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
 
+p,
+li {
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
 .article{
 	
 	margin-top:10px;
