@@ -5,8 +5,14 @@
 
 
 /* カルーセル全体 */
+.back{
+  height: 110%;
+  padding: 10px 0;
+  background-color: #baa47c;
+}
+
 .carousel {
-  margin-top: 120px;
+  margin-top: 115px;
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -20,7 +26,6 @@
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-    aspect-ratio: 2.8 / 2;
 }
 
 .track {
@@ -154,6 +159,8 @@ display: flex;
 }
 
 #shop{
+  font-family: "Noto Serif JP", serif;
+
   margin-top: 8px;
   font-size: 25px;
   inset: 0;
@@ -163,6 +170,8 @@ display: flex;
 }
 
 #shop2{
+  font-family: "Noto Serif JP", serif;
+
   font-size: 36px;
     margin-bottom: 16px;
     margin-left: 10px;
@@ -172,6 +181,7 @@ display: flex;
     0 2px 3px rgba(0,0,0,.3);}
 
 #yoyaku{
+  font-family: Pretendard,monospace;
   font-size: 15px;
   margin: auto;
   width: 120px;
@@ -180,6 +190,8 @@ display: flex;
 }
 
 #salon{
+    font-family: Pretendard,monospace;
+
 font-size: 12px;
 margin-bottom: 20px;
 }

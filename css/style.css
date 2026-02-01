@@ -34,6 +34,7 @@ h1{
 font-weight: 600;
 }
 
+
 h2 {
   line-height: 1.5;
   letter-spacing: 0.03em;
@@ -49,6 +50,8 @@ p,
 li {
   line-height: 1.9;
   letter-spacing: 0.02em;
+    font-family: Pretendard,monospace;
+
 }
 
 
@@ -78,16 +81,16 @@ li {
 
 .logo-text {
   padding-left: 2px;
-  font-size: 12px;
+  font-size: 11px;
   color: #666;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
   line-height: 1.2;
   white-space: nowrap;
 }
 
 #logo {
-  padding-left: 5px;
-    width: 100px;
+  padding-left: 10px;
+    width: 120px;
     object-fit: contain;
 }
 
@@ -151,7 +154,6 @@ font-size: 12px;
 .input-hidden{
 	display: none;
 }
-
 
 
 	/* label */
