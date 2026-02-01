@@ -9,18 +9,19 @@
   /* 水平方向中央寄せ */
   display: flex;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 100px;
+  padding-top: 5px;
 }
 /* カルーセル内容 */
 .contains {
   /* サイズは自由に変更してください。*/
   /* 下の.slideも同じサイズにしてください。 */
   width: 100VW;
-  height: 50vw;
-  overflow: hidden;
+  height: 60vw;
   position: relative;
   padding: 0;
   list-style: none;
+
 }
 /* スライド切り換え用ラジオボタンは常に非表示 */
 .slide_select {
@@ -31,16 +32,23 @@
   /* サイズは自由に変更してください。*/
   /* 上の.containsも同じサイズにしてください。 */
   width: 100vw;
-  height: 50vw;
+  height: 60vw;   /* ここは好みでOK */
   position: absolute;
   opacity: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain; 
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
   display: block;
+
 }
 
 .controler_scroll {
