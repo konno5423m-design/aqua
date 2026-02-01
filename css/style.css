@@ -10,7 +10,7 @@
 body{
 	margin-top:0;
 	margin:0;
-	padding:0;
+	padding:10px;
 	background-color:#ffffff;
   line-height: 1.8;
   letter-spacing: 0.03em;
@@ -50,11 +50,6 @@ p,
 li {
   line-height: 1.9;
   letter-spacing: 0.02em;
-}
-article{
-	padding:10px;
-	background-color:#ffffff;
-	
 }
 
 
@@ -166,7 +161,7 @@ font-size: 12px;
   margin-top: 10px;
 	cursor: pointer;
 	position: absolute;
-	right: 1%;
+	right: 0.5%;
 	top:5px; /* ハンバーガーアイコンの位置（上から） */
 	z-index: 9999;
 	width: 4em; /* アイコン（クリック可能領域）の幅 */
@@ -287,4 +282,13 @@ height: 130px;
 	
 }
 
+.access{
+	margin-top: 50px;
+	padding: 20px;
+background-color: #d4c6b5;
+}
 
+iframe{
+	width:auto;
+	height: auto;
+}
