@@ -43,20 +43,27 @@
   display: block;
 }
 
+.controler_scroll {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+}
+
 
 /* 前へ次へボタン */
 .scroll_button {
+    width: 28px;
+  height: 28px;
+  border-width: 6px 6px 0 0;
+  opacity: 0.8;
   position: absolute;
   display: block;
-  height: 15px;
-  width: 15px;
   /* 縦中央から20px上の位置 */
   top: 50%;
   margin-top: -20px;
 /* 上辺と右辺のみ幅5pxの枠線 */
-  border-width: 5px 5px 0 0;
   border-style: solid;
-  border-color: #707070;
+  border-color: #565656;
   cursor: pointer;
   /* 普段はボタンはやや薄くする */
   opacity: 0.5;

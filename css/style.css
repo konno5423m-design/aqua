@@ -37,7 +37,7 @@ font-weight: 600;
 
 h2 {
   line-height: 1.5;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
 }
 
 
@@ -49,12 +49,10 @@ h3 {
 p,
 li {
   line-height: 1.9;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
 }
-.article{
-	
-	margin-top:10px;
-	margin:10px;
+article{
+	padding:10px;
 	background-color:#ffffff;
 	
 }
@@ -102,7 +100,6 @@ li {
 
 .reserved{
 	width: auto;
-  padding-right: 20px;
   margin-left: auto;
 position: relative;
 align-items:flex-end
@@ -116,7 +113,7 @@ position: static;
 }
 
 .btn-wrap{
-	margin-right: 50px;
+	padding-right: 70px;
 	display: flex;
 	flex-direction: column;
 }
