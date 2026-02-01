@@ -16,7 +16,7 @@
   /* サイズは自由に変更してください。*/
   /* 下の.slideも同じサイズにしてください。 */
   width: 100VW;
-  height: 100vw;
+  height: 50vw;
   overflow: hidden;
   position: relative;
   padding: 0;
@@ -31,16 +31,15 @@
   /* サイズは自由に変更してください。*/
   /* 上の.containsも同じサイズにしてください。 */
   width: 100vw;
-  height: 100vw;
+  height: 50vw;
   position: absolute;
-  /* スライドの初期値は選択されていないので透明にしておく */
   opacity: 0;
 }
 
 .slide img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* ←これが主役 */
+  object-fit: contain; 
   display: block;
 }
 
