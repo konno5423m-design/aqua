@@ -57,11 +57,10 @@ li {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 100;
   background: #fff;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 5px;
 }
 .hover1 {
 	transition: all 0.6s ease 0s;
@@ -78,7 +77,7 @@ li {
 
 
 .logo-text {
-  padding: 2px;
+  padding-left: 2px;
   font-size: 12px;
   color: #666;
   margin-bottom: 3px;
