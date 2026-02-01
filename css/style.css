@@ -45,7 +45,6 @@ h1,h2,h3,h4,h5,p,a{
   width: 100%;
   z-index: 1000;
   background: #fff;
- display: flex;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 5px;
@@ -60,7 +59,6 @@ h1,h2,h3,h4,h5,p,a{
 
 .logo-wrap {
   display: flex;
-  flex-direction: column;
   align-items: flex-start; /* 左揃え */
 }
 
@@ -96,7 +94,6 @@ position: static;
 }
 
 .btn-wrap{
-	margin-top: 26px;
 	margin-right: 50px;
 	display: flex;
 	flex-direction: column;
