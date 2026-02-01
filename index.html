@@ -80,37 +80,17 @@
 </header>
 
 <body>
-<div class="carousel">
-  <div class="contains">
-
-    <!-- ラジオボタン -->
-    <input class="slide_select" type="radio" id="SlideA" name="slide_check" checked>
-    <input class="slide_select" type="radio" id="SlideB" name="slide_check">
-    <input class="slide_select" type="radio" id="SlideC" name="slide_check">
-    <input class="slide_select" type="radio" id="SlideD" name="slide_check">
-
-    <!-- スライド -->
-    <div class="slide"><img src="image/top2.JPEG"></div>
-    <div class="slide"><img src="https://picsum.photos/320/180?random=2"></div>
-    <div class="slide"><img src="https://picsum.photos/320/180?random=3"></div>
-    <div class="slide"><img src="https://picsum.photos/320/180?random=4"></div>
-
-    <!-- ★ 前へ・次へボタン（ここが重要） -->
-    <div class="controler_scroll">
-      <label class="scroll_button scroll_prev" for="SlideD"></label>
-      <label class="scroll_button scroll_next" for="SlideB"></label>
-    </div>
-
-    <!-- ドット -->
-    <div class="move_controler">
-      <label class="button_move" for="SlideA"></label>
-      <label class="button_move" for="SlideB"></label>
-      <label class="button_move" for="SlideC"></label>
-      <label class="button_move" for="SlideD"></label>
-    </div>
-
-  </div>
+<div class="carousel" id="carousel">
+  <div class="track">
+  <div class="slide"><img src="image/top2.JPEG"></div>
+  <div class="slide"><img src="https://picsum.photos/320/180?random=2"></div>
+  <div class="slide"><img src="https://picsum.photos/320/180?random=3"></div>
 </div>
+  <button class="prev">‹</button>
+  <button class="next">›</button>
+
+  <div class="dots"></div>
+</div> 
 <div class="face">
 <h2 id="eki">阪和線　我孫子町駅・御堂筋線あびこ駅から徒歩６分</h2>
   <h2 id="shop">長居リラクゼーション<br>あくあ</h2>
@@ -302,8 +282,8 @@
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0926396739364!2d135.50772187558522!3d34.601818872954986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000dc311815ccff%3A0xb007c707a91ec9bc!2z6ZW35bGF44Oq44Op44Kv44K844O844K344On44Oz44K144Ot44OzIOOBguOBj-OBgg!5e0!3m2!1sja!2sjp!4v1769937724715!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
 
-
-<script src="js/mainjs.js"></script>
+<script src="js/swipe.js"></script>
+<script src="js/main.js" defer></script>
 </body>
 
 <footer>
