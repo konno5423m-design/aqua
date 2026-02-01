@@ -16,7 +16,7 @@
   /* サイズは自由に変更してください。*/
   /* 下の.slideも同じサイズにしてください。 */
   width: 100VW;
-  height: 40vw;
+  height: 100vw;
   overflow: hidden;
   position: relative;
   padding: 0;
@@ -31,7 +31,7 @@
   /* サイズは自由に変更してください。*/
   /* 上の.containsも同じサイズにしてください。 */
   width: 100vw;
-  height: 40vw;
+  height: 100vw;
   position: absolute;
   /* スライドの初期値は選択されていないので透明にしておく */
   opacity: 0;

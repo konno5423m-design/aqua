@@ -15,12 +15,16 @@ body{
 
 }
 
-.html{
+html{
 	font-size: 18px;
   box-sizing: border-box;
 line-height: 1.7;
   box-sizing: border-box;
 
+}
+
+h1,h2,h3,h4,h5,p,a{
+	margin: 0;
 }
 
 
@@ -73,45 +77,51 @@ line-height: 1.7;
 
 #logo {
   padding-left: 5px;
-    width: 120px;
+    width: 100px;
     object-fit: contain;
 }
 
 .reserved{
+	width: auto;
   padding-right: 20px;
   margin-left: auto;
-  width:200px;
 position: relative;
 align-items:flex-end
 }
 
 
 .fa-position-left {
-  position: absolute;
+position: static;
   top: calc(50% - 0.5em);
   left: 1rem;
 }
 
-
-
-
-a.btn-contact i {
-  font-size: 15px;
+.btn-wrap{
+	margin-top: 26px;
+	margin-right: 50px;
+	display: flex;
+	flex-direction: column;
 }
 
-a.btn-contact i.fa-position-left {
-  font-size: 20px;
 
-  left: 1.2rem;
+
+a.btn-contact i.fa-position-left {
+  font-size: 19px;
+text-decoration: none;
+  left: 1rem;
 }
 
 a.btn-contact {
-  width: 100px;
-  
-  display: block;
+		text-decoration: none;
+	margin-bottom: 5px;
+	 display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width:auto;
 border: 2px solid #ff9900;
-border-radius: 15px;
-  padding: 20px;
+border-radius: 8px;
+  padding: 15px;
   color: #ffffff;
   background: #ff9500;
   box-shadow: 0 3px 1px #cd821f;
@@ -123,16 +133,25 @@ a.btn-contact:hover {
 background-color: #ffffff;
 }
 
+
+.reserved-text{
+font-size: 12px;
+
+
+}
 	/* inputを非表示 */
 .input-hidden{
 	display: none;
 }
+
+
+
 	/* label */
 .hamburger-demo-switch{
   margin-top: 10px;
 	cursor: pointer;
 	position: absolute;
-	right: 3%;
+	right: 1%;
 	top:5px; /* ハンバーガーアイコンの位置（上から） */
 	z-index: 9999;
 	width: 4em; /* アイコン（クリック可能領域）の幅 */
