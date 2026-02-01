@@ -42,10 +42,10 @@ line-height: 1.7;
   width: 100%;
   z-index: 1000;
   background: #fff;
-  position: fixed;
  display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 5px;
 }
 .hover1 {
 	transition: all 0.6s ease 0s;
@@ -61,16 +61,18 @@ line-height: 1.7;
   align-items: flex-start; /* 左揃え */
 }
 
+
 .logo-text {
+  padding: 2px;
   font-size: 12px;
   color: #666;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
   line-height: 1.2;
+  white-space: nowrap;
 }
 
 #logo {
-    margin: 10px;
-    padding: 20px 0 0;
+  padding-left: 5px;
     width: 120px;
     object-fit: contain;
 }
