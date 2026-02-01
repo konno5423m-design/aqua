@@ -149,3 +149,38 @@
   .button_move:nth-of-type(4) {
   opacity: 1;
 }
+
+.face{
+  margin-top: 10px;
+text-align: center;
+}
+#eki{
+  font-size: 12px;
+}
+
+
+
+
+.set h2{
+border: solid 2px #565656;
+}
+
+.introduce{
+  padding: 20px;
+  background-color: rgb(252, 252, 252);
+}
+
+
+
+
+
+article{
+  margin-top: 10px;
+  background-color: rgb(224, 212, 172);
+  padding: 20px 20px;
+}
+
+.menulist{
+  background-color: beige;
+  padding: 20px 10px;
+}
