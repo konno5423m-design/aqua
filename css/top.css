@@ -7,8 +7,8 @@
 /* カルーセル全体 */
 .back{
   height: 110%;
-  padding: 10px 0;
-  background-color: #baa47c;
+  padding-bottom: 10px;
+  background-color: #dec18b;
 }
 
 .carousel {
@@ -115,7 +115,7 @@
 text-align: center;
 }
 #eki{
-  font-size: 12px;
+  font-size: 11px;
 }
 
 
@@ -152,9 +152,9 @@ display: flex;
 
 
 #face-logo{
-  width: 48px;
+  width: 50px;
     height: auto;
-  border-radius: 8px;
+  border-radius: 5px;
   box-shadow: 0 2px 6px rgba(0,0,0,.25);
 }
 
@@ -162,9 +162,10 @@ display: flex;
   font-family: "Noto Serif JP", serif;
 
   margin-top: 8px;
+    margin-bottom: 0;
+
   font-size: 25px;
   inset: 0;
-  margin: 0;
   color: #111;
   text-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
@@ -173,7 +174,7 @@ display: flex;
   font-family: "Noto Serif JP", serif;
 
   font-size: 36px;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
     margin-left: 10px;
   color: #111;
  text-shadow:
@@ -182,7 +183,7 @@ display: flex;
 
 #yoyaku{
   font-family: Pretendard,monospace;
-  font-size: 15px;
+  font-size: 13px;
   margin: auto;
   width: 120px;
   border-bottom: solid 2px #222;
@@ -206,7 +207,7 @@ margin-bottom: 20px;
 
 
 article{
-  background-color: rgb(157, 138, 115);
+  background-color: #dec18b;
   padding: 20px 20px;
 }
 
