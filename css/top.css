@@ -372,7 +372,7 @@ article p{
   left: 10px;
 }
 
-.nex2t {
+.next2 {
   right: 10px;
 }
 
@@ -385,10 +385,11 @@ article p{
   background-color: beige;
   padding: 20px 10px;
 }
-.menulist h2{
+.menulist h2 {
+  
+  margin: 40px 30px 30px 30px;
   text-align: center;
-  padding: 10px;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .menu-item {
@@ -399,8 +400,45 @@ article p{
 
 
 
-.menu-item-list{
-padding: 1rem;
+.menu-item li{
+  font-size: 18px;
     line-height: 1.5;
 }
 
+.menu-item a{
+  font-size: 20px;
+    line-height: 1.5;
+}
+
+
+.voice{
+  text-align: center;
+}
+.voice h3{
+    display: inline-block;
+    position: relative;
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.voice h3::before,
+.voice h3::after {
+    position: absolute;
+    top: 0.8rem;
+    height: 1.8rem;
+    content: '';
+}
+
+.voice h3::before {
+    border-left: solid 3px;
+    left: 0;
+    transform: rotate(-30deg);
+}
+
+.voice h3::after {
+    border-right: solid 3px;
+    right: 0;
+    transform: rotate(30deg);
+}
