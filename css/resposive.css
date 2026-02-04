@@ -52,6 +52,26 @@
 
 
 
+.carousel2 {
+    height: auto;
+  }
+
+  .track2 {
+    transform: none !important;
+    transition: none;
+  }
+
+  .slide2 {
+    width: 25%;
+  }
+
+  .prev,
+  .next,
+  .dots {
+    display: none;
+  }
+  
+
 
 
 
