@@ -31,7 +31,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
-
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
   <link rel="stylesheet" href="css/style.css">
@@ -73,7 +74,6 @@
 		<div class="hamburger-demo-menuwrap">
 			<ul class="hamburger-demo-menulist">
 				<li><a href="main.html">TOP</a></li>
-				<li><a href="us.html">当店について</a></li>
 				<li><a href="menu.html">メニュー＆料金表</a></li>
 				<li><a href="contact.html">ご予約・お問い合わせ</a></li>
 				<li><a href="access.html">アクセス</a></li>
@@ -93,6 +93,11 @@
 </div>
   <button class="prev"></button>
   <button class="next"></button>
+  <div class="center" id="stars-top">
+    <p>口コミ評価</p>
+    <strong>4.5</strong>
+<div class="stars rate-45"></div>
+  </div>
 
   <div class="dots"></div>
 </div> 
@@ -136,6 +141,7 @@
 
 <section class="contener1">
 <h2 class="title">こんな方におすすめ</h2>
+<div class="recommend-box">
 <ul class="recommend">
 <li>自分の体の状態を見てほしい</li>
 <li>人目を気にせず<br>ゆっくりリラックスしたい</li>
@@ -147,28 +153,27 @@
 <div class="recommend-item">
 <img src="image/irasuto.png" alt="肩こりに悩む女性と男性のイラスト">
 </div>
+</div>
 </section>
 
 <section class="point">
+    <h2 class="title">あくあの特徴</h2>
 
   <div class="point-item">
-<h3>オーダーメイドの施術</h3>
- <p>
-      その日の体調やお悩みを確認し、
-      一人ひとりに合わせた施術を行います。
-    </p>
-<h3>施術歴20年ベテランセラピスト</h3>
- <p>
-     タイ政府公式ライセンスを所持した経験豊富なセラピストによる施術</p>
-<h3>もみ返しの少ない施術</h3>
-  <p>
-      お客さまのコリに合わせて強さを調整しながら行うため、
-      施術後も快適に過ごせます。
-    </p>
+<section class="about-circle" data-aos="fade-up" data-aos-duration="800">
+  <div class="item top">オーダーメイドの施術</div>
+  <div class="item left">施術歴◯年<br>ベテラン</div>
+  <div class="item right">もみ返しの<br>少ない施術</div>
 
-    <h2 class="title">あくあ　４つの特徴</h2>
+  <div class="center">
+    <p>口コミ評価</p>
+    <strong>4.5</strong>
+<div class="stars rate-45"></div>
+  </div>
+</section>
 
 </div>
+
 <div class="carousel2" id="carousel2">
   <div class="track2">
     <div class="slide2">
@@ -221,10 +226,11 @@
 
 
 <section class="menulist">
-<h2>MENU</h2>
+<h2 class="title">MENU</h2>
 <div class="accordion">
+  <div class="menu-accordion">
     <div class="accordion-item">
-        <input class="accordion-check" id="accordion-1" checked="" type="checkbox">
+        <input class="accordion-check" id="accordion-1"  type="checkbox">
         <label class="accordion-label" for="accordion-1">全身もみほぐし</label>
         <div class="accordion-box">
            <p>30分　3,000円</p>
@@ -234,17 +240,17 @@
 <p>90分　7,200円</p>
 <p>120分　9,600円</p>
         </div>
+        </div>
         <img src="image/heroimg.jpg" class="img-pic1">
 
         <div class="menu-right">
   <a href="https://edisone.jp/nagaiaqua" class="btn-contact2">
 今すぐ予約 </a>
             <a href="">詳細</a>
-
+</div>
         </div>
+  <div class="menu-accordion">
 
-    </div>
-    <div class="menu-img"></div>
     <div class="accordion-item">
         <input class="accordion-check" id="accordion-2" type="checkbox">
         <label class="accordion-label" for="accordion-2">足つぼ</label>
@@ -260,7 +266,9 @@
             <a href="">詳細</a>
 
         </div>
-    
+  </div>
+    <div class="menu-accordion">
+
     <div class="accordion-item">
         <input class="accordion-check" id="accordion-3" type="checkbox">
         <label class="accordion-label" for="accordion-3">全身もみほぐし＋足つぼ</label>
@@ -276,8 +284,10 @@
   <a href="https://edisone.jp/nagaiaqua" class="btn-contact2">
 今すぐ予約</a>
             <a href="">詳細</a>
-
         </div>
+        </div>
+          <div class="menu-accordion">
+
     <div class="accordion-item">
         <input class="accordion-check" id="accordion-4" type="checkbox">
         <label class="accordion-label" for="accordion-4">ヘッド</label>
@@ -293,6 +303,8 @@
             <a href="">詳細</a>
 
         </div>
+          </div>
+            <div class="menu-accordion">
 
     <div class="accordion-item">
         <input class="accordion-check" id="accordion-5" type="checkbox">
@@ -309,8 +321,10 @@
   <a href="https://edisone.jp/nagaiaqua" class="btn-contact2">
 今すぐ予約</a>
             <a href="">詳細</a>
-
         </div>
+        </div>
+          <div class="menu-accordion">
+
     <div class="accordion-item">
         <input class="accordion-check" id="accordion-6" type="checkbox">
         <label class="accordion-label" for="accordion-6">オプション</label>
@@ -329,7 +343,8 @@
             <a href="">詳細</a>
 
         </div>
-
+          </div>
+  <div class="menu-accordion">
 
     <div class="accordion-item">
         <input class="accordion-check" id="accordion-7" type="checkbox">
@@ -348,7 +363,7 @@
             <a href="">詳細</a>
 
         </div>
-
+  </div>
         </div>
 </div>
 

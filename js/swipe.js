@@ -92,3 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initCarousel("carousel2", ".track2", ".slide2");
 
 });
+
+  // AOS
+  AOS.init();
+

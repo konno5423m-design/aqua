@@ -8,7 +8,7 @@
 .back{
   height: 110%;
   padding-bottom: 10px;
-  background-color: #dec18b;
+  background-color: #a48a6d;
 }
 
 .carousel {
@@ -110,6 +110,11 @@
 .next:hover {
   background: rgba(0,0,0,.6);
 }
+
+
+#stars-top{
+  margin-left: 100px;
+}
 .face{
   margin-top: 10px;
 text-align: center;
@@ -207,7 +212,7 @@ margin-bottom: 20px;
 
 
 article{
-  background-color: #dec18b;
+  background-color: #a48a6d;
   padding: 20px 20px;
 }
 
@@ -219,18 +224,23 @@ article p{
   font-size: 16px;
 }
 
-.contener1{
+.contener1 h2{
   margin-top: 3rem;
+      background-color: #f6f0f0;
+        border-radius: 30px;
+}
+
+.recommend-box{
       background-color: #f6f0f0;
         border-radius: 10px;
 
-}
 
+}
 .title{
+      display: inline-block;
    position: relative;
-    margin-bottom: 3rem;
-    padding: 0.5rem;
-    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
     border: 10px solid rgba(255, 255, 255, .15);
     box-shadow: 1px 1px 4px rgba(0, 0, 0, .3);
     background-color: rgba(255, 255, 255, 0.5);
@@ -239,7 +249,142 @@ article p{
     text-align: center;
 }
 
+.point{
+  text-align: center;
+  margin-top: 50px;
+}
 
+.point h2{
+  margin-bottom:50px;
+}
+.about-circle {
+  position: relative;
+  width: 320px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.item {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #FFD966;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  z-index: 99;
+}
+.item.top {
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.item.left {
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.item.right {
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.center {
+  
+  background-image: url(../image/メダル口コミ.png);
+  background-size: contain;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 140px;
+  height: 130px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.center strong{
+  font-size: 28px;
+  color: #473b3b;
+  text-shadow: 0 1px 2px rgba(255,255,255,0.8);
+}
+
+.center p{
+    font-size: 18px;
+  color: #473b3b;
+  text-shadow: 0 1px 2px rgba(255,255,255,0.8);
+
+}
+
+.stars {
+  position: relative;
+  font-size: 20px;
+  line-height: 1;
+  text-shadow:
+    0 0 3px #fff,
+    0 1px 2px rgba(0,0,0,0.3);
+}
+
+.stars::before {
+  content: "★★★★★";
+  color: #fff; /* 下地を白に */
+}
+
+.stars::after {
+  content: "★★★★★";
+  color: #f5a623;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.about-circle::before {
+  content: "";
+  position: absolute;
+  inset: 20px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.6);
+}
+.about-circle::after {
+  content: "";
+  position: absolute;
+  inset: 11px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.6);
+}
+
+
+.stars {
+  position: relative;
+c}
+
+.stars::before {
+  content: "★★★★★";
+  color: #fff; /* 下地を白に */
+}
+
+.stars::after {
+  content: "★★★★★";
+  color: #f5a623;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.stars.rate-45::after { width: 90%; }
+.stars.rate-40::after { width: 80%; }
 
 .about-slide {
     position: relative;
@@ -323,7 +468,7 @@ article p{
 }
 
 .dot {
-  display: inline-block;
+  display: inlie-block;
   width: 10px;
   height: 10px;
   margin: 0 4px;
