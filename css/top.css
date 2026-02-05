@@ -393,7 +393,7 @@ padding: 50px  0px 20px;
 
 .about-slide p {
   font-size: 15px;
-  padding: 20px 30px;
+  padding: 20px 30px 10px 30px;
     color: #333;
     line-height: 1.5;
 
@@ -509,7 +509,7 @@ padding: 50px  0px 20px;
   
   margin: 40px 30px 30px 30px;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .menu-item {
@@ -528,8 +528,12 @@ padding: 50px  0px 20px;
     line-height: 1.5;
 }
 
+.voice h2{
+  font-size: 20px;
+}
 
 .voice{
+  margin: 30px 10px;
   text-align: center;
 }
 .voice h3{
