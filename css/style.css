@@ -92,9 +92,8 @@ li {
     object-fit: contain;
 }
 .top-btn-contact{
-	border:2px solid #ff9f22;
+	border:2px solid #ffaa00;
 	border-radius: 15px;
-	padding: 10px;
 }
 .top-reserved{
 	height: 50px;
@@ -102,15 +101,22 @@ li {
 .top-btn-wrap{ 
 	display: flex;
 	flex-direction: column;
+	text-align: center;
+}
+#top-btn-contact{
+	color: #ffaa00;
+	text-decoration: none;
+	font-size: 15px;
 }
 
 .reserved {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   position: fixed;
   bottom: 6px;
-  left: 50%;
+  left: 70%;
   transform: translateX(-50%) translateY(20px);
-  width: calc(100% - 100px);
-  max-width: 420px;
+  width: calc(100% - 150px);
+  max-width: 150px;
   opacity: 0;
   pointer-events: none;
   transition: .3s ease;
@@ -127,12 +133,6 @@ li {
 position: static;
   top: calc(50% - 0.5em);
   left: 1rem;
-}
-
-.btn-wrap{
-	padding-right: 70px;
-	display: flex;
-	flex-direction: column;
 }
 
 
@@ -166,7 +166,7 @@ background-color: #ffffff;
 
 
 .reserved-text{
-font-size: 12px;
+font-size: 10px;
 }
 
 	/* inputを非表示 */
