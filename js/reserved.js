@@ -17,3 +17,28 @@ if (target && reserved) {
 
   observer.observe(target);
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const reserved = document.querySelector(".reserved");
+  const footer = document.querySelector("footer");
+
+  if (!reserved || !footer) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          reserved.classList.add("is-hide-footer");
+        } else {
+          reserved.classList.remove("is-hide-footer");
+        }
+      });
+    },
+    {
+      root: null,
+      threshold: 0
+    }
+  );
+
+  observer.observe(footer);
+});
