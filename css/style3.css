@@ -1,0 +1,36 @@
+.voice h2{
+  font-size: 20px;
+}
+
+.voice{
+  margin: 30px 10px;
+  text-align: center;
+}
+.voice h3{
+    display: inline-block;
+    position: relative;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.voice h3::before,
+.voice h3::after {
+    position: absolute;
+    top: 0.8rem;
+    height: 1.8rem;
+    content: '';
+}
+
+.voice h3::before {
+    border-left: solid 3px;
+    left: 0;
+    transform: rotate(-30deg);
+}
+
+.voice h3::after {
+    border-right: solid 3px;
+    right: 0;
+    transform: rotate(30deg);
+}

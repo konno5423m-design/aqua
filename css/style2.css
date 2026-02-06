@@ -248,6 +248,29 @@ article p{
  padding: 10px;
 
 }
+
+.recommend{
+  padding: 10px;
+}
+
+.recommend-box li{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    column-gap: 8px;
+    color: #030303;
+}
+
+.recommend-box li::before {
+    width: 0.8em;
+    height: 0.4em;
+    border-bottom: 4px solid #321111;
+    border-left: 4px solid #321111;
+    transform: rotate(-45deg) translate(2px, -2px);
+    content: '';
+}
+
+
 .title{
     font-size: 26px;
     color: #fff;
@@ -261,7 +284,7 @@ article p{
   background-image: url(../image/3/inside.jpeg);
   background-position: center;
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
   padding: 50px 0 20px;
   text-align: center;
 }
@@ -463,6 +486,7 @@ article p{
   flex-shrink: 0;
    display: flex;
   align-items: flex-start;
+  
 }
 
 .track2 {
@@ -579,39 +603,3 @@ article p{
     line-height: 1.5;
 }
 
-.voice h2{
-  font-size: 20px;
-}
-
-.voice{
-  margin: 30px 10px;
-  text-align: center;
-}
-.voice h3{
-    display: inline-block;
-    position: relative;
-    padding: 1rem 1.5rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-}
-
-.voice h3::before,
-.voice h3::after {
-    position: absolute;
-    top: 0.8rem;
-    height: 1.8rem;
-    content: '';
-}
-
-.voice h3::before {
-    border-left: solid 3px;
-    left: 0;
-    transform: rotate(-30deg);
-}
-
-.voice h3::after {
-    border-right: solid 3px;
-    right: 0;
-    transform: rotate(30deg);
-}
