@@ -27,6 +27,15 @@
 .accordion {
     padding: 1rem;
 }
+.menu-accordion {
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 2px 5px 10px rgba(0,0,0,.1);
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
 
 .accordion-item {
     margin-bottom: 0.5rem;
@@ -37,6 +46,7 @@
 }
 
 .accordion-label {
+    box-shadow: 2px 5px 5px #837a5f;
     position: relative;
     display: block;
     cursor: pointer;
@@ -87,8 +97,15 @@ margin: 10px;
 width: 150px;
 }
 
-.menu-right{
-    float: right;
+.menu-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.menu-right {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
 }

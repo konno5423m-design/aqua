@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   body {
     line-height: 1.7;
     letter-spacing: 0.02em;
@@ -7,6 +7,15 @@
 
   h1 {
     letter-spacing: 0.04em;
+  }
+
+   .accordion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 2列 */
+    gap: 1.5rem;
+  }
+  .menu-accordion {
+    gap: 1rem;
   }
 }
 
@@ -71,8 +80,5 @@
     display: none;
   }
   
-
-
-
 
 }

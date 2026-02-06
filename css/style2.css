@@ -199,7 +199,7 @@ font-size: 12px;
 margin-bottom: 20px;
 }
 
-.introduce{
+.introduce{ 
     position: relative;
   padding: 60px 10px 10px 20px;
   z-index: 2;
@@ -305,17 +305,15 @@ article p{
 .point h2{
     position: relative;
     z-index: 2;
-  margin-bottom:50px;
   border-bottom: 2px solid #a48a6d;
   display: inline;
 }
 .about-circle {
     z-index: 2;
-
   position: relative;
   width: 320px;
   aspect-ratio: 1 / 1;
-  margin: 50px auto;
+  margin: 30px auto 10px;
   border-radius: 50%;
 }
 .item {
@@ -343,13 +341,13 @@ article p{
 .item.left {
   left: -20px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-20%);
 }
 
 .item.right {
   right: -20px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-20%);
 }
 
 .center {
@@ -432,6 +430,7 @@ article p{
 
 .about-slide {
       z-index: 2;
+    box-shadow: 5px 10px 20px #ccc;
 
   margin: 10px;
     position: relative;
