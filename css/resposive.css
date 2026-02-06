@@ -24,7 +24,7 @@
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: 80%;
+  background-size: contain;
   padding: 50px 0 20px;
   text-align: center;
 }
@@ -91,6 +91,10 @@
   .dots {
     display: none;
   }
-  
+
+    .point{
+  background-size: 100%;
+}
+
 
 }
