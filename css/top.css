@@ -261,7 +261,7 @@ article p{
   background-image: url(../image/3/inside.jpeg);
   background-position: center;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
   padding: 50px 0 20px;
   text-align: center;
 }
