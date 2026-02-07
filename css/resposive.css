@@ -21,6 +21,11 @@
   .menu-accordion {
     gap: 1rem;
   }
+.carousel2{
+  background-size: contain;
+}
+
+
 
   .point{
   position: relative;
