@@ -39,7 +39,9 @@
 
 .voice h2{
   font-size: 20px;
+text-shadow: 0 2px 2px#bbbbbb;
 }
+
 
 .voice{
   margin: 30px 10px;
@@ -82,10 +84,127 @@
   object-fit: cover;
 }
 
-
 .original{
     width: 100%;
-    height: 600px;
+    height: 500px;
 background-size: cover;
 }
 
+#original-title{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    color: #333333;
+    -webkit-box-reflect: below -10px -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, .25));
+}
+
+.original2{
+ display: flex;
+ padding: 20px;
+}
+
+.main{
+    margin-top: 20px;
+}
+
+
+.main h2{
+  text-align: right;
+  position: absolute;
+  z-index: 10;
+}
+.main p{
+  padding: 90px 30px 50px 30px;
+  position: absolute;
+  z-index: 10;
+}
+
+.faq h2{
+    text-align: center;
+  font-size: 20px;
+text-shadow: 0 2px 2px#bbbbbb;
+}
+
+.accordion-007 {
+    max-width: 500px;
+    margin-bottom: 7px;
+}
+
+.accordion-007 summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1em 2em;
+    border: 2px solid #472915;
+    border-radius: 25px;
+    color: #472915;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.accordion-007 summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion-007 summary::after {
+    transform: translateY(-25%) rotate(45deg);
+    width: 7px;
+    height: 7px;
+    border-bottom: 3px solid #472915;
+    border-right: 3px solid #472915;
+    content: '';
+    transition: transform .3s;
+}
+
+.accordion-007[open] summary::after {
+    transform: rotate(225deg);
+}
+
+.accordion-007 p {
+    position: relative;
+    transform: translateY(-10px);
+    opacity: 0;
+    margin-top: 20px;
+    padding: .8em 1.2em;
+    border: 2px solid #472915;
+    border-radius: 25px;
+    background-color: #fff;
+    color: #000000;
+    transition: transform .5s, opacity .5s;
+}
+
+.accordion-007[open] p {
+    transform: none;
+    opacity: 1;
+}
+
+.accordion-007 p::before,
+.accordion-007 p::after {
+    position: absolute;
+    top: -15px;
+    left: 1.2em;
+    width: 30px;
+    height: 15px;
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    content: '';
+}
+
+.accordion-007 p::before {
+    background-color: #472915;
+}
+
+.accordion-007 p::after {
+    top: -12px;
+    background-color: #fff;
+}
+
+
+
+.last{
+    text-align: center;
+margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
