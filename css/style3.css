@@ -42,6 +42,14 @@
 text-shadow: 0 2px 2px#bbbbbb;
 }
 
+.voice h2::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 2px;
+  margin: 12px auto 0;
+  background: #c8b08a;
+}
 
 .voice{
   margin: 30px 10px;
@@ -85,37 +93,35 @@ text-shadow: 0 2px 2px#bbbbbb;
   object-fit: cover;
 }
 
+.original-item {
+    margin-top: 60px;
+}
 .original {
   width: 100%;
   height: 100vh;
   position: relative;
 }
 #original-title{
-    margin: 40px 20px 30px 20px;
-    text-align: center;
+    margin: 10px 20px 30px 20px;
     font-size: 20px;
     position: relative;
+    text-align: center;
     color: #333333;
     -webkit-box-reflect: below -10px -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, .25));
 }
 .original2{
-
-  margin-top: 32px;
-  padding: 24px 0;
-  background: linear-gradient(
-    to bottom,
-    #b6a76f,
-    #a99b70
-  );
   color: #fff;
+margin-bottom: 5px;
 }
 
 .original2-box{
+    background-color: #7f6946;
+border-radius: 5px;
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 18px 24px;
-  max-width: 520px;
+  padding: 18px 15px;
+  width: 390px;
   margin: 0 auto;
 }
 .original2-box h3{
@@ -124,13 +130,9 @@ text-shadow: 0 2px 2px#bbbbbb;
   line-height: 1.6;
   letter-spacing: .05em;
 }
-.original2-box:not(:last-child){
-  border-bottom: 1px solid rgba(255,255,255,0.15);
-}
 .original-pic{
-  width: 40px;
-  height: 40px;
-  border-radius: 6px;
+  width: 90px;
+  border-radius: 3px;
   object-fit: cover;
 }
 .main{
@@ -165,7 +167,7 @@ text-shadow: 0 2px 2px#bbbbbb;
   background: #fff;
   position: relative;
   z-index: 2;
-margin-top: 30px;
+margin: 30px auto;
   padding: 0px 20px;
 }
 
@@ -185,8 +187,9 @@ text-shadow: 0 2px 2px#bbbbbb;
 }
 
 .accordion-007 {
+    
     max-width: 500px;
-    margin-bottom: 7px;
+    margin:0px auto 7px;
 }
 
 .accordion-007 summary {
@@ -271,6 +274,14 @@ margin-top: 20px;
     height: auto;
 }
 
+.last p{
+font-size: 15px;
+
+}
+
+.last-item{
+    margin-top: 50px;
+}
 .section-divider {
   height: 32px;
   background: linear-gradient(
@@ -278,4 +289,11 @@ margin-top: 20px;
     rgba(0,0,0,0.12),
     rgba(0,0,0,0)
   );
+}
+
+.tell a{
+    text-decoration: none;
+}
+.tell img{
+    width: 90px;
 }

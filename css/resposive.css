@@ -113,6 +113,17 @@
 
     display: flex;
 }
+.recommend-item img{
+  width: 50%;
+  height: auto;
+}
 
+.main h2{
+  padding-left: 50px;
+  text-align: left;
+}
+.main-text{
+  padding: 100px;
+}
 
 }

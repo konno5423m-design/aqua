@@ -22,9 +22,41 @@
 .menulist h2{
     font-size: 20px;
 text-shadow: 0 2px 2px#bbbbbb;
+  
+  margin: 40px 30px 30px 30px;
+  text-align: center;
 
 }
 
+.menulist h2::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 2px;
+  margin: 12px auto 0;
+  background: #c8b08a;
+}
+
+.menulist{
+  background-color: rgb(255, 255, 255);
+  padding: 0px 10px;
+}
+
+.menu-item {
+   position: relative;
+    padding: 1rem;
+    border: 2px solid #000000;
+}
+
+.menu-item li{
+  font-size: 18px;
+    line-height: 1.5;
+}
+
+.menu-item a{
+  font-size: 20px;
+    line-height: 1.5;
+}
 
 
 
@@ -32,7 +64,7 @@ text-shadow: 0 2px 2px#bbbbbb;
     padding: 1rem;
 }
 .menu-accordion {
-    background: #fff;
+    background: #e8dab2;
     padding: 1rem;
     box-shadow: 2px 5px 10px rgba(0,0,0,.1);
 margin-bottom: 10px;
@@ -50,12 +82,12 @@ margin-bottom: 10px;
 }
 
 .accordion-label {
-    box-shadow: 2px 5px 5px #837a5f;
+    box-shadow: 2px 5px 5px #605841;
     position: relative;
     display: block;
     cursor: pointer;
     padding: 0.5rem;
-    background-color: #dec18b;
+    background-color: #cfaf74;
     color: #333;
     font-size: 1rem;
     line-height: 1.5;
