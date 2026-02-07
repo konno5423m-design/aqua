@@ -18,14 +18,25 @@
 }
 @keyframes change-img-anim-first {
   0%{ opacity: 0;}
-  30%{ opacity: 0.3}
-  45%{ opacity: 0.4;}
+  30%{ opacity: 0.4}
+  45%{ opacity: 0.5;}
   100%{ opacity: 0;}
 }
 @keyframes change-img-anim {
   0%{ opacity: 0;}
   30%{ opacity: 0.3;}
   36%{ opacity: 0.4;}
-  45%{ opacity: 0.4;}
+  45%{ opacity: 0.5;}
   100%{ opacity: 0;}
+}
+
+.main h2{
+  text-align: right;
+  position: absolute;
+  z-index: 10;
+}
+.main p{
+  padding: 90px 30px 50px 30px;
+  position: absolute;
+  z-index: 10;
 }
