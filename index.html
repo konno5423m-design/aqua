@@ -32,7 +32,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
 
   <link rel="stylesheet" href="css/style.css">
@@ -41,6 +43,7 @@
 <link rel="stylesheet" href="css/resposive.css">
 <link rel="stylesheet" href="css/recommend.css">
 <link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="css/animetion.css">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -52,7 +55,7 @@
     <div class="logo-wrap">
 
 <a href="index.html">
-<img src="https://nagai-aqua.com/wp-content/themes/lp_aqua/images/logo.webp" class="hover1" id="logo">
+<img src="image/logo.webp" class="hover1" id="logo">
 </a>
 <section class="top-reserved">
 <div class="top-btn-wrap">
@@ -96,11 +99,22 @@
   <div class="dots"></div>
 </div> 
 </div>
+
+<div class="main">
+  <div class="container-top">
+    <img class="image-top" src="image/3/1.jpeg" >
+    <img class="image-top" src="image/3/outside.webp" >
+    <img class="image-top" src="image/3/inside3.jpg">
+  </div>
+</div>
+
+
+
 <div class="face">
 <h2 id="eki">阪和線　我孫子町駅・御堂筋線あびこ駅から徒歩６分</h2>
   <h2 id="shop">長居リラクゼーション</h2>
   <div class="shop-name">
-     <img src="image/logo2.jpg" id="face-logo">
+     <img src="image/logo.webp" id="face-logo">
 <h2 id="shop2">あくあ</h2>
 </div>
   <h2 id="yoyaku">完全予約制</h2>
@@ -117,7 +131,7 @@
 <article>
 
 <section class="curved" >
-  <div class="introduce">
+  <div class="introduce" data-aos="zoom-in">
   <h1>住吉区でマッサージをお探しの方は<br>リラクゼーションあくあ<br>におまかせください</h1>
 
   <p class="lead">当店では、通常のもみほぐしにくわえ
@@ -423,8 +437,36 @@
   <h3>お友達追加で初回1000円OFF！</h3>
   <h3>簡単予約・紹介割引き・お誕生日割引き</h3>
 </div>
-</section>
 
+
+
+<div class="splide" aria-label="動き続けるループスライダー">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <img src="image/heroimg.jpg" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="image/line1.png" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="image/irasuto.jpg" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="image/taikosiki.jpg" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="https://pengi-n.co.jp/blog/wp-content/uploads/2024/01/splide-05.jpg" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="https://pengi-n.co.jp/blog/wp-content/uploads/2024/01/splide-06.jpg" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="https://pengi-n.co.jp/blog/wp-content/uploads/2024/01/splide-07.jpg" alt="">
+      </li>
+    </ul>
+  </div>
+</div>
 <section class="access">
 
 <img src="https://nagai-aqua.com/wp-content/themes/lp_aqua/images/logo.webp" class="hover1" id="logo">
@@ -438,6 +480,8 @@
 
 <script src="js/swipe.js"></script>
 <script src="js/main.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.2/dist/js/splide-extension-auto-scroll.min.js"></script>
 </body>
 
 <footer>

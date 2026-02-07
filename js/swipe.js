@@ -1,4 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const options = {
+  perMove: 1, 
+  gap: 16,
+  cover: true,　
+  heightRatio: 0.5,
+  updateOnMove: true,
+  padding: '5rem',
+  type: 'loop',
+  focus:'center',
+}
+
+
+const splide = new Splide(".splide", options);
+splide.mount(window.splide.Extensions);})
+
+document.addEventListener("DOMContentLoaded", () => {
+
 
   function initCarousel(carouselId, trackClass, slideClass) {
     const carousel = document.getElementById(carouselId);
@@ -87,7 +104,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 初期化（ここが重要）
   initCarousel("carousel", ".track", ".slide");
   initCarousel("carousel2", ".track2", ".slide2");
 
@@ -95,4 +111,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // AOS
   AOS.init();
-
