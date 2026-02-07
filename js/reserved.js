@@ -41,4 +41,27 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   observer.observe(footer);
+
+
+  
 });
+
+const menuSection = document.querySelector('#menulist');
+const cta = document.querySelector('.reserved');
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        cta.classList.add('cta-hide');
+      } else {
+        cta.classList.remove('cta-hide');
+      }
+    });
+  },
+  {
+    threshold: 0.2
+  }
+);
+
+observer.observe(menuSection);
