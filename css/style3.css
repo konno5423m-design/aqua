@@ -60,7 +60,7 @@ text-shadow: 0 2px 2px#bbbbbb;
     display: inline-block;
     position: relative;
     padding: 0.5rem 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
 }
@@ -262,7 +262,7 @@ text-shadow: 0 2px 2px#bbbbbb;
 }
 
 #line{
-    width:50px
+    width:80px
     
 }
 
@@ -295,5 +295,5 @@ font-size: 15px;
     text-decoration: none;
 }
 .tell img{
-    width: 90px;
+    width: 60px;
 }
