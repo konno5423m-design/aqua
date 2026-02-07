@@ -28,6 +28,10 @@
   text-align: center;
 }
 
+
+.main{
+  z-index: -1;
+}
 }
 
 
