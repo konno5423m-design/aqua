@@ -18,8 +18,8 @@
 }
 @keyframes change-img-anim-first {
   0%{ opacity: 0;}
-  30%{ opacity: 0.4}
-  45%{ opacity: 0.5;}
+  30%{ opacity: 0.3}
+  45%{ opacity: 0.4;}
   100%{ opacity: 0;}
 }
 @keyframes change-img-anim {
