@@ -1,7 +1,7 @@
 
 .card {
     margin: auto;
-    display: flex;
+    display: grid;
     align-items: center;
     padding: 1rem;
     word-wrap: break-word;
@@ -11,8 +11,8 @@
     border-radius: 0.25rem;
     box-shadow:2px 2px 2px 2px #ccc;
     width: 300px;
+    margin-bottom: 10px;
 }
-
 .card-image {
     width: 30%;
     height: 50px;
@@ -48,6 +48,7 @@ text-shadow: 0 2px 2px#bbbbbb;
   text-align: center;
 }
 .voice h3{
+    margin: 50px 10px 20px 10px;
     display: inline-block;
     position: relative;
     padding: 0.5rem 1.5rem;
