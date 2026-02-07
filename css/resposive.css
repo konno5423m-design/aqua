@@ -9,11 +9,15 @@
     letter-spacing: 0.04em;
   }
 
-   .accordion {
+ .accordion {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 2列 */
     gap: 1.5rem;
   }
+  img {
+  max-width: 100%;
+  height: auto;
+}
   .menu-accordion {
     gap: 1rem;
   }

@@ -30,37 +30,44 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600&display=swap" rel="stylesheet">
-  <!-- CSS -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
   <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/style3.css">
 <link rel="stylesheet" href="css/resposive.css">
 <link rel="stylesheet" href="css/recommend.css">
 <link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="css/animetion.css">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
+<body>
 
 <header class="header">
   <span class="logo-text">大阪市住吉区|もみほぐし・マッサージ</span>
     <div class="logo-wrap">
 
 <a href="index.html">
-<img src="https://nagai-aqua.com/wp-content/themes/lp_aqua/images/logo.webp" class="hover1" id="logo">
+<img src="image/logo.webp" class="hover1" id="logo">
 </a>
-
-<section class="reserved">
-<div class="btn-wrap">
-  <a href="https://edisone.jp/nagaiaqua" class="btn-contact">
-    <i class="fa-regular fa-calendar fa-position-left">簡単予約</i>
+<section class="top-reserved">
+<div class="top-btn-wrap">
+  <a href="https://edisone.jp/nagaiaqua" class="top-btn-contact">
+    <i class="fa-regular fa-calendar fa-position-left" id="top-btn-contact">簡単予約<br></i>
       </a>
-
-      <span class="reserved-text">営業時間 10:00~23:00</span>
-
+      <span class="reserved-text">営業時間 9:00~23:00</span>
 </div>
 </div>
 
 </section>
+
 
 <div class="hamburger">
 		<input id="hamburger1" type="checkbox" class="input-hidden">
@@ -70,7 +77,6 @@
 		<div class="hamburger-demo-menuwrap">
 			<ul class="hamburger-demo-menulist">
 				<li><a href="main.html">TOP</a></li>
-				<li><a href="us.html">当店について</a></li>
 				<li><a href="menu.html">メニュー＆料金表</a></li>
 				<li><a href="contact.html">ご予約・お問い合わせ</a></li>
 				<li><a href="access.html">アクセス</a></li>
@@ -78,29 +84,32 @@
 		</div>
 		<div class="hamburger-demo-cover"></div>
 
-</div>
 </header>
-<div class="menu-item">
-  <h3>迷った時のおすすめメニュー</h3>
-      <ul>
-        <li>とりあえず全体をほぐしたい方</li>
-        <a href="">全身もみほぐし６０分</a>
-        <li>足が特にお疲れの方</li>
-                <a href="">足つぼ４０分</a>
 
-        <li>頭・首がお疲れの方</li>
-                <a href="">ヘッドケア３０分</a>
+  <div class="back" id="about">
+<div class="carousel" id="carousel">
+  <div class="track">
+  <div class="slide"><img src="image/top2.JPEG"></div>
+  <div class="slide"><img src="image/3/2.jpeg"></div>
+  <div class="slide"><img src="https://picsum.photos/320/180?random=3"></div>
+</div>
+  <button class="prev"></button>
+  <button class="next"></button>
 
-        <li>全身のお疲れをしっかりケアしたい方 </li>
-                <a href="">あくあスペシャル１２０分超</a>
-
-      </ul>
-    </div>
+  <div class="dots"></div>
+</div> 
 </div>
 
+
+<article>
+
+
+<section class="menulist">
+<h2>メニュー/料金表</h2>
 <div class="accordion">
+  <div class="menu-accordion">
     <div class="accordion-item">
-        <input class="accordion-check" id="accordion-1" checked="" type="checkbox">
+        <input class="accordion-check" id="accordion-1"  type="checkbox">
         <label class="accordion-label" for="accordion-1">全身もみほぐし</label>
         <div class="accordion-box">
            <p>30分　3,000円</p>
@@ -110,17 +119,17 @@
 <p>90分　7,200円</p>
 <p>120分　9,600円</p>
         </div>
-        <img src="image/heroimg.jpg" class="img-pic1">
-
-        <div class="menu-right">
-  <a href="https://edisone.jp/nagaiaqua" class="btn-contact2">
-空席確認 </a>
-            <a href="">詳細</a>
-
         </div>
+<div class="menu-bottom">
+  <img src="image/3/1up.jpeg" class="img-pic1">
 
-    </div>
-    <div class="menu-img"></div>
+  <div class="menu-right">
+    <a href="https://edisone.jp/nagaiaqua" class="btn-contact2">今すぐ予約</a>
+    <a href="">詳細</a>
+  </div>
+  </div>
+  </div>
+<div class="menu-accordion">
     <div class="accordion-item">
         <input class="accordion-check" id="accordion-2" type="checkbox">
         <label class="accordion-label" for="accordion-2">足つぼ</label>
@@ -128,15 +137,17 @@
 <p>40分　4,000円</p>
         </div>
         </div>
-        <img src="image/heroimg.jpg" class="img-pic1">
+<div class="menu-bottom">
+  <img src="image/heroimg.jpg" class="img-pic1">
 
-        <div class="menu-right">
-  <a href="https://edisone.jp/nagaiaqua" class="btn-contact2">
-空席確認 </a>
-            <a href="">詳細</a>
+  <div class="menu-right">
+    <a href="https://edisone.jp/nagaiaqua" class="btn-contact2">今すぐ予約</a>
+    <a href="">詳細</a>
+  </div>
+</div>  
+</div>
 
-        </div>
-    
+    <div class="menu-accordion">
     <div class="accordion-item">
         <input class="accordion-check" id="accordion-3" type="checkbox">
         <label class="accordion-label" for="accordion-3">全身もみほぐし＋足つぼ</label>
@@ -146,54 +157,227 @@
 <p>(足)40分＋(体)90分　6,300円</p>
         </div>
         </div>
+        <div class="menu-bottom">
+
         <img src="image/heroimg.jpg" class="img-pic1">
 
         <div class="menu-right">
   <a href="https://edisone.jp/nagaiaqua" class="btn-contact2">
-空席確認 </a>
+今すぐ予約</a>
             <a href="">詳細</a>
-
         </div>
-
-
-
+        </div>
     </div>
+ <div class="menu-accordion">
+
+    <div class="accordion-item">
+        <input class="accordion-check" id="accordion-4" type="checkbox">
+        <label class="accordion-label" for="accordion-4">ヘッド</label>
+        <div class="accordion-box">
+<p>30分　3,000円</p>
+        </div>
+        </div>
+<div class="menu-bottom">
+  <img src="image/heroimg.jpg" class="img-pic1">
+
+  <div class="menu-right">
+    <a href="https://edisone.jp/nagaiaqua" class="btn-contact2">今すぐ予約</a>
+    <a href="">詳細</a>
+  </div>
+</div>  
+</div> 
+
+            <div class="menu-accordion">
+
+    <div class="accordion-item">
+        <input class="accordion-check" id="accordion-5" type="checkbox">
+        <label class="accordion-label" for="accordion-5">タイ古式マッサージ</label>
+        <div class="accordion-box">
+<p>100分　7,600円</p>
+<p>130分　9,600円</p>
+<p>160分　12,000円</p>
+        </div>
+        </div>
+<div class="menu-bottom">
+  <img src="image/heroimg.jpg" class="img-pic1">
+
+  <div class="menu-right">
+    <a href="https://edisone.jp/nagaiaqua" class="btn-contact2">今すぐ予約</a>
+    <a href="">詳細</a>
+  </div>
+</div>  
+</div> 
+
+          <div class="menu-accordion">
+
+    <div class="accordion-item">
+        <input class="accordion-check" id="accordion-6" type="checkbox">
+        <label class="accordion-label" for="accordion-6">オプション</label>
+        <div class="accordion-box">
+          <p>顔つぼ</p>
+<p>ヘッド</p>
+<p>タイ古式小顔</p>
+<p>ストレッチポール</p>
+        </div>
+        </div>
+<div class="menu-bottom">
+  <img src="image/3/8.webp" class="img-pic1">
+
+  <div class="menu-right">
+    <a href="https://edisone.jp/nagaiaqua" class="btn-contact2">今すぐ予約</a>
+    <a href="">詳細</a>
+  </div>
+</div>  
+</div> 
+
+  <div class="menu-accordion">
+
+    <div class="accordion-item">
+        <input class="accordion-check" id="accordion-7" type="checkbox">
+        <label class="accordion-label" for="accordion-7">あくあスペシャル　２時間超</label>
+        <div class="accordion-box">
+          <p>お客様のご希望に沿った形で当店の可能な技術を駆使してお疲れ解消に努めます。本当にお疲れの方、
+  しっかりとした癒しをお求めの方、ぜひお試しください</p>
+<p>120分~　11,000円</p>
+  </div>
+          </div>
+<div class="menu-bottom">
+  <img src="image/heroimg.jpg" class="img-pic1">
+
+  <div class="menu-right">
+    <a href="https://edisone.jp/nagaiaqua" class="btn-contact2">今すぐ予約</a>
+    <a href="">詳細</a>
+  </div>
+</div>  
+</div> 
+</div>
+
+</section>
+<section class="original">
+<div class="original-box">
+  <h2 id="original-title">施術のこだわり</h2>
+
+<div class="main">
+  <div class="container">
+    <img class="image-top" src="image/3/1.jpeg" />
+    <img class="image-top" src="image/3/inside.jpeg" />
+    <img class="image-top" src="image/3/8.jpeg" />
+  </div>
+  <h2>痛い。でも、終わったあとは不思議と軽い。</h2>
+    <p>正直、施術中は少し痛みを感じることがあります。 でも終わったあとは “体が軽い”“動きやすい”と感じる方がほとんどです。
+ただ強く押すのではなく
+お体の状態に合わせ最適なツボを最適な力加減で施術しているため、もみ返しが起きにくく翌日以降も快適にお過ごし頂けます。</p>
+</div>
+</div>
+</section>
+
+
+</section>
+
+<section class="faq">
+<h2>よくある質問</h2>
+<details class="accordion-007">
+    <summary>痛いですか？</summary>
+    <p>心地よい部分と、コリの場所により痛みを感じる部分もあるかと思いますが、施術後に体が軽くなる加減を見極めています</p>
+</details>
+<details class="accordion-007">
+    <summary>強さは途中で変えられますか？</summary>
+    <p>もちろんお客様のご要望に応じて、強さを変えられます</p>
+</details>
+<details class="accordion-007">
+    <summary>どんな方が多いですか？</summary>
+    <p>お子様連れの方や、お仕事帰りの方、日中の隙間時間で来られる方などさまざまなお客様がいらっしゃいます</p>
+</details>
+
+
+</section>
+<section class="last">
+<h3>お仕事帰りや家事の合間など<br>
+お疲れの体を癒しに<br>
+ぜひお立ち寄りください</h3>
+  <p>お一人様ずつの施術となるため
+    確認が遅れる場合があります。
+    お急ぎの際は
+    お電話にてお問合せください。
+  </p>
+  <div class="tell">
+<a href="tel:0700000000">070-000-000</a>
+</div>
+
+</section>
+<section class="reserved">
+<div class="btn-wrap">
+  <a href="https://app.squareup.com/appointments/book/v9w7v07uu9c13n/LM4VRB598K807/start" class="btn-contact">
+    <i class="fa-regular fa-calendar fa-position-left">簡単予約<br><span class="reserved-text">営業時間 9:00~23:00</span>
+</i>
+
+</a>
+</div>
+</section>
+
+</section>
+<section class="line">
+  <h2>LINEクーポン配信中</h2>
+<div>
+  <h3>お友達追加で初回1000円OFF！</h3>
+  <h3>簡単予約・紹介割引き・お誕生日割引き</h3>
+  <a href="https://page.line.me/370wkhgr?oat_content=url&openQrModal=true" id="line"><img src="image/line1.png"></a>
 </div>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+<div class="splide" aria-label="動き続けるループスライダー">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <img src="image/3/1.jpeg" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="image/3/outside.webp" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="image/3/inside3.jpg" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="image/taikosiki.jpg" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="https://pengi-n.co.jp/blog/wp-content/uploads/2024/01/splide-05.jpg" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="https://pengi-n.co.jp/blog/wp-content/uploads/2024/01/splide-06.jpg" alt="">
+      </li>
+      <li class="splide__slide">
+        <img src="https://pengi-n.co.jp/blog/wp-content/uploads/2024/01/splide-07.jpg" alt="">
+      </li>
+    </ul>
+  </div>
+</div>
 <section class="access">
+
 <img src="https://nagai-aqua.com/wp-content/themes/lp_aqua/images/logo.webp" class="hover1" id="logo">
 <h2>長居リラクゼーション<br>あくあ</h2>
 <p>【住所】大阪府大阪市住吉区我孫子２ー４－１０<br>シャーメゾンKS103号</p>
 <p>【営業時間】</p>
+
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0926396739364!2d135.50772187558522!3d34.601818872954986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000dc311815ccff%3A0xb007c707a91ec9bc!2z6ZW35bGF44Oq44Op44Kv44K844O844K344On44Oz44K144Ot44OzIOOBguOBj-OBgg!5e0!3m2!1sja!2sjp!4v1769937724715!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
+<script src="js/reserved.js"></script>
 
 <script src="js/swipe.js"></script>
 <script src="js/main.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.2/dist/js/splide-extension-auto-scroll.min.js"></script>
 </body>
 
 <footer>
 <div class="footmenu">
 <p>当店について</p>
 <p>お問い合わせ</p>
-<p><a href="https://edisone.jp/nagaiaqua"><i class="fa-brands fa-instagram" style="color: #ffaa33;"></i>Instagram</a></p>
-
+<a href="https://app.squareup.com/appointments/book/v9w7v07uu9c13n/LM4VRB598K807/start
+"><p>aa</p></a>
 </div>
 <small>Copyright 2026 長居リラクゼーションあくあ All right reserved.</small>
 </footer>
 </html>
-
