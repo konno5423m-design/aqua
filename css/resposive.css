@@ -1,4 +1,10 @@
-@media (min-width: 768px) {
+
+
+
+
+
+
+@media (max-width: 991px) {
   body {
     line-height: 1.7;
     letter-spacing: 0.02em;
@@ -9,11 +15,6 @@
     letter-spacing: 0.04em;
   }
 
- .accordion {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 2列 */
-    gap: 1.5rem;
-  }
   img {
   max-width: 100%;
   height: auto;
@@ -22,6 +23,7 @@
     gap: 1rem;
   }
 .carousel2{
+  background-position: center;
   background-size: contain;
 }
 
@@ -41,6 +43,9 @@
 .main{
   z-index: -1;
 }
+.pc-nav {
+  display: none;
+}
 
 
 }
@@ -51,8 +56,8 @@
 @media (min-width:992px){
 	
 .details-wrap{
-	width:1200;
-	height:500;
+	width:1200px;
+	height:500px;
 }
 	.kakou{
 	margin-top:50px;
@@ -65,13 +70,17 @@
 .carousel {
   padding: 0px 20px;
     height: auto;
-    overflow: visible;
+    overflow: hidden;
   }
 
   .track {
     transform: none !important;
     transition: none;
   }
+
+  .track img{
+     display: block; 
+    }
 
   .slide {
     min-width: auto;
@@ -132,4 +141,40 @@
   padding: 100px;
 }
 
+ .accordion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 2列 */
+    gap: 1.5rem;
+  }
+
+
+  .hamburger {
+    display: none;
+  }
+  
+  #navi1,
+  .navi2{
+    display: none;
+  }
+
+
+  .pc-nav {
+    display: block;
+font-size: 18px;
+  }
+  .pc-nav ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+  }
+  .pc-nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
 }
+
+
