@@ -331,6 +331,7 @@ article p{
     overflow: hidden;
     line-height: 0;
     margin: 0;
+    transform: rotateZ(0);
 }
 
 .custom-shape-divider-top-1770523462 svg {
