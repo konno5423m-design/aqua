@@ -24,6 +24,10 @@
   border-left: none;
 }
 
+.highlight {
+    color: #996011;
+    font-weight: bold;
+}
 
 .link{
 	position: relative;

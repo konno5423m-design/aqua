@@ -26,6 +26,9 @@ line-height: 1.7;
 
 }
 
+img {
+  display: block;
+}
 h1,h2,h3,h4,h5,p,a{
 	margin: 0;
 }
