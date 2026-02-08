@@ -53,7 +53,6 @@ a.btn-contact {
 	margin-bottom: 5px;
 	 display: inline-flex;
   align-items: center;
- display: block;
   padding: 14px;
   background: #ff9800;
   color: #fff;
@@ -92,26 +91,36 @@ font-size: 10px;
 }
 
 .cta-fixed {
+    align-items: center;
+gap: 8px;
+  box-sizing: border-box;
   position: fixed;
   right: 16px;
-  bottom: 2px;
-  z-index: 9999;
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  max-width: calc(100vw - 32px);
+  bottom: 16px;
+  left: auto;
+display: flex;
+  width: auto;
+  max-width: none;
 }
-
 .btn-contact {
+  align-items: center;
+  display: flex;
   background: #fff;
   padding: 5px 12px;
   border-radius: 999px;
   font-size: 12px;
-  line-height: 1.2;
+  line-height: 1;
   width: auto;
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
     white-space: nowrap;
 }
+
+.btn-contact img {
+   display: block;
+  width: 22px;
+  height: 22px;
+}
+
 
 .reserved.cta-hide {
   opacity: 0;
@@ -171,3 +180,19 @@ font-size: 10px;
 #line-top{
     width: 45px;
 }
+
+
+
+@media (min-width:780px){
+
+
+  .btn-contact {
+width: 150px;
+  }
+
+  .line-header-btn{
+width: 150px;
+
+  }
+}
+
