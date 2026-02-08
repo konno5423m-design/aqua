@@ -289,6 +289,7 @@ article p{
   background-size: cover;
   padding: 50px 0 20px;
   text-align: center;
+  margin: 0;
 }
 
 .point::before{
@@ -329,6 +330,7 @@ article p{
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    margin: 0;
 }
 
 .custom-shape-divider-top-1770523462 svg {
