@@ -1,3 +1,45 @@
+.line-title{
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 50px auto;
+  position: relative;
+  gap: 50px;
+}
+.line-title::before,
+.line-title::after{
+  content: "";
+  display: inline-block;
+  border: 1px solid #000;
+  aspect-ratio: 1/3;
+  width: 20px;
+}
+.line-title::before{
+  border-right: none;
+}
+.line-title::after{
+  border-left: none;
+}
 
 
+.link{
+	position: relative;
+	padding-left: 1.5em;
+    text-decoration: none;
+}
+
+.link::after {
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	content: "\f138";
+	left: 0;
+	top: 0;
+	font-weight: 900;
+	font-size: 1em;
+	color: #d99227;
+
+}
 
