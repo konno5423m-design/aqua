@@ -9,7 +9,7 @@
 .carousel {
   margin-top: 90px;
   position: relative;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
     touch-action: pan-y;
 }
