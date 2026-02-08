@@ -322,6 +322,27 @@ article p{
   width:50px;
 }
 
+.custom-shape-divider-top-1770523462 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1770523462 svg {
+    position: relative;
+    display: block;
+    width: calc(126% + 1.3px);
+    height: 60px;
+}
+
+.custom-shape-divider-top-1770523462 .shape-fill {
+    fill: #be9f6e;
+}
+
+
 .about-circle {
     z-index: 2;
   position: relative;
