@@ -25,18 +25,22 @@
   background-size: contain;
 }
 
-
-
-  .point{
-  background-repeat: no-repeat;
-  background-size: contain;
-  text-align: center;
+.header{
+  display: flex;
 }
+
+.header-left{
+  display: flex;
+  flex-direction: column;
+}
+
 
 
 .main{
   z-index: -1;
 }
+
+
 }
 
 
