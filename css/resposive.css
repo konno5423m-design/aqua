@@ -86,9 +86,6 @@
   
 
 
-
-
-
 .carousel2 {
     height: auto;
   }
@@ -120,6 +117,8 @@
 
     display: flex;
 }
+
+
 .recommend-item img{
   width: 50%;
   height: auto;
