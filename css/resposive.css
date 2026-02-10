@@ -1,6 +1,12 @@
 
 
+@media (max-width: 480px) {
 
+  .hamburger-demo-switch {
+    width: 4em;
+    height: 4em;
+  }
+}
 
 
 
