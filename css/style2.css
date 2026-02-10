@@ -192,8 +192,8 @@ margin: 5px auto 20px;
     position: relative;
   z-index: 2;
    background: #fdfdfd;
-  border-radius: 60% 60% 55% 45% / 58% 60% 40% 45%;
-  padding: 50px 30px;
+  border-radius: 82% 80% 68% 60% / 60% 75% 60% 60%;
+  padding: 50px 20px;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -208,7 +208,7 @@ margin: 5px auto 20px;
 .introduce p {
     line-height: 1.8;
     color: #333;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .introduce-box{
@@ -222,7 +222,6 @@ margin: 5px auto 20px;
   font-size: 16px;
     color: #333;
     line-height: 1.8;
-    margin-top: 20px;
 }
  .underline{
   text-align: left;
@@ -242,13 +241,14 @@ article p{
 
 .contener1{
   margin: 0;
-  padding: 40px 30px;
+  padding: 40px 20px;
   background-color: #ceb998;
 }
 
 
 .recommend-box{
-  padding: 20px 0px;
+  margin: 50px 0px;
+  padding: 10px 0px;
       background-color: #ffffff;
         border-radius: 10px;
 
@@ -259,12 +259,17 @@ article p{
   
 }
 
+.recommend-box ul{
+  margin: auto;
+}
+
+
 .recommend-box li{
     display: flex;
     align-items: center;
-    padding: 10px;
     column-gap: 8px;
     color: #030303;
+    padding-bottom: 20px;
 }
 
 .recommend-box li::before {
