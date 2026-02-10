@@ -247,7 +247,7 @@ article p{
 
 
 .recommend-box{
-  margin: 50px 0px;
+  margin: 50px auto;
   padding: 10px 0px;
       background-color: #ffffff;
         border-radius: 10px;
@@ -270,6 +270,7 @@ article p{
     column-gap: 8px;
     color: #030303;
     padding-bottom: 20px;
+      font-size: 17px;
 }
 
 .recommend-box li::before {
