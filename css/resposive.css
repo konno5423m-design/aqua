@@ -6,9 +6,11 @@
     width: 4em;
     height: 4em;
   }
+  .btn-contact-top{
+    display: none;
 }
 
-
+}
 
 @media (max-width: 991px) {
   body {
