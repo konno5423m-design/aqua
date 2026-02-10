@@ -146,6 +146,7 @@ border-radius: 5px;
 }
 
 .main h2{
+    font-size: 35px;
     padding: 20px 0px 0px 40px;
   position: relative;
   margin-bottom: 20px;
@@ -154,7 +155,7 @@ border-radius: 5px;
 .main p{
       position: relative;
   z-index: 2;
-
+ font-size: 18px;
   padding: 20px 30px 50px;
 }
 
