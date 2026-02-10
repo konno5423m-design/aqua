@@ -192,26 +192,47 @@ margin: 5px auto 20px;
     position: relative;
   z-index: 2;
    background: #fdfdfd;
-  border-radius: 60% 40% 55% 45% / 55% 60% 40% 45%;
-  padding: 4rem 3rem;
+  border-radius: 60% 60% 55% 45% / 58% 60% 40% 45%;
+  padding: 50px 30px;
   max-width: 900px;
   margin: 0 auto;
 }
 
+.introduce strong{
+  font-size: 18px;
+    color: #333;
+  font-weight: 700;
+}
 
 
 .introduce p {
-    line-height: 1.5;
+    line-height: 1.8;
+    color: #333;
+    font-size: 16px;
 }
 
 .introduce-box{
+  text-align: center;
   padding-top: 50px;
       background-color: #be9f6e;
 
 }
 
+.introduce-text{
+  font-size: 16px;
+    color: #333;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+ .underline{
+  text-align: left;
+margin-left: 30px;
+ }
+
 h1{
   font-size: 20px;
+  font-family: "Noto Serif JP", serif;
+  
 }
 
 article p{
