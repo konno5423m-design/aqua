@@ -24,7 +24,7 @@
   border-left: none;
 }
 
-.highlight {
+.highlight{
     color: #996011;
     font-weight: bold;
 }
@@ -35,7 +35,7 @@
     text-decoration: none;
 }
 
-.link::after {
+.link::after{
 	position: absolute;
 	font-family: "Font Awesome 5 Free";
 	content: "\f138";
@@ -45,5 +45,41 @@
 	font-size: 1em;
 	color: #d99227;
 
+}
+
+#trbody h3,
+#trtai h3,
+#trspecial h3{
+  font-size: 22px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+#trbody h4,
+#trtai h4,
+#trspecial h4{
+  font-size: 20px;
+  padding-bottom: 10px;}
+
+
+
+#trbody img,
+#trspecial img{
+  width: 60%;
+  height: auto;
+  display: block;
+}
+
+.noaccordion{
+  display: block;
+  margin-bottom: 50px;
+}
+
+.nomenu-accordion{
+  background-color: rgb(219, 181, 134);
+  border: 2px solid #000000;
+  padding: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 

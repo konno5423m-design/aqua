@@ -131,7 +131,8 @@ margin-bottom: 10px;
 
 .img-pic1{
 margin: 5px;
-height: 60px;
+width: 40%;
+height: auto;
 }
 
 .menu-bottom {
