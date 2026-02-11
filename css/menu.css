@@ -64,10 +64,11 @@ text-shadow: 0 2px 2px#bbbbbb;
     padding: 1rem;
 }
 .menu-accordion {
+    border: 1px solid #33270f;
     background: #e8dab2;
     padding: 1rem;
     box-shadow: 2px 5px 10px rgba(0,0,0,.1);
-margin-bottom: 10px;
+margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;

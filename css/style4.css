@@ -49,6 +49,12 @@
   border-left: none;
 }
 
+.line h4{
+  font-size: 16px;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
 .highlight{
     color: #996011;
     font-weight: bold;
