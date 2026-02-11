@@ -140,7 +140,7 @@ border-radius: 5px;
 .main{
   position: relative;
   width: 100%;
-  min-height: 60vh;   
+  min-height: 70vh;   
   padding: 40px 20px;
   overflow: hidden;   
 }

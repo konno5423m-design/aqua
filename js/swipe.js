@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const options = {
   perMove: 1, 
   gap: 16,
-  cover: true,　
+  cover: true,
   heightRatio: 0.5,
   updateOnMove: true,
   padding: '5rem',
@@ -72,7 +72,13 @@ document.addEventListener("DOMContentLoaded", () => {
     function prev() {
       moveTo(index - 1);
     }
+let autoSlide = setInterval(() => {
+  next();
+}, 3000);
 
+carousel.addEventListener("touchstart", () => {
+  clearInterval(autoSlide);
+});
     nextBtn.addEventListener("click", next);
     prevBtn.addEventListener("click", prev);
 
@@ -102,12 +108,21 @@ document.addEventListener("DOMContentLoaded", () => {
       if (Math.abs(diff) > 50) diff < 0 ? next() : prev();
       dragging = false;
     });
-  }
+  
+    carousel.addEventListener("mouseenter", () => {
+  clearInterval(autoSlide);
+});
 
+carousel.addEventListener("mouseleave", () => {
+  autoSlide = setInterval(() => {
+    next();
+  }, 3000);
+});
+  }
   initCarousel("carousel", ".track", ".slide");
   initCarousel("carousel2", ".track2", ".slide2");
 
-});
 
+});
   // AOS
   AOS.init();
