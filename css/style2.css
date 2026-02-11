@@ -164,12 +164,17 @@ display: flex;
   color: #111;
   text-shadow: 1px 2px 3px rgba(81, 81, 81, 0.75);
 }
+
+.face-item{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
 #yoyaku{
+  padding-top: 30px;
   font-family: Pretendard,monospace;
   font-size: 15px;
-  margin: 10px auto;
-  width: 120px;
-  border-bottom: solid 2px #222;
 
 }
 
@@ -177,7 +182,13 @@ display: flex;
     font-family: Pretendard,monospace;
 
 font-size: 15px;
-margin: 5px auto 20px;
+}
+
+
+#face-pic{
+  width: 100px;
+    height: auto;
+  display: block;
 }
 
 .top-section{
