@@ -72,6 +72,22 @@
 
 }
 
+.tell{
+  margin-top: 20px;
+}
+
+  .tell a{
+      border: 2px solid #33270f;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+
+    text-decoration: none;
+    color: #31190c;
+    padding: 10px 20px;
+  }
+
 #trbody h3,
 #trtai h3,
 #trspecial h3{
