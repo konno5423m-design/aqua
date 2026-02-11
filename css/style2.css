@@ -48,6 +48,7 @@
 }
 
 .dot {
+    transform: translateY(15px);
   display: inline-block;
   width: 10px;
   height: 10px;
