@@ -1,0 +1,164 @@
+#carouselmenu{
+    height: 200px;
+}
+
+
+.box p {
+    color: #333;
+    line-height: 1.5;
+}
+
+.box-title {
+    position: absolute;
+    display: inline-block;
+    top: -0.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0rem 1rem;
+    background-color: white;
+    font-weight: 600;
+}
+
+.box-body {
+    padding: 1rem;
+    line-height: 1.5;
+}
+
+
+.menu-title{
+     color: #333333;
+    font-weight: 400;
+    font-size: .75rem;
+    letter-spacing: .04em;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+
+
+.menu-title::before {
+    display: block;
+    font-weight: 700;
+    font-size: 1.65rem;
+    line-height: 1.5;
+    letter-spacing: .02em;
+    content: attr(data-label);
+}
+.menulist{
+    margin: 0;
+  background-color: rgb(255, 255, 255);
+  padding: 0px 10px;
+}
+
+.menu-item {
+   position: relative;
+    padding: 1rem;
+    border: 2px solid #000000;
+}
+
+.menu-item li{
+  font-size: 18px;
+    line-height: 1.5;
+}
+
+.menu-item a{
+  font-size: 20px;
+    line-height: 1.5;
+}
+
+
+
+.accordion {
+    padding: 1rem;
+}
+.menu-accordion {
+    box-shadow: #33270f 0px 4px 6px -1px, #33270f 0px 2px 4px -1px;
+    background: #dad3c0;
+    padding: 1rem;
+margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 30px;
+}
+
+.menu-accordion h4{
+    text-align: center;
+    background: #f4ede3;
+    padding: 1rem; }
+
+.accordion-item {
+    margin-bottom: 0.5rem;
+}
+
+.accordion-check {
+    display: none;
+}
+
+.accordion-label {
+    width: 60%;
+    box-shadow: 2px 5px 5px #605841;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding: 0.8em;
+    background-color: #8c7f5d;
+    color: #ffffff;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.accordion-label::after {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    height: auto;
+    width: 50px;
+    transform: translateY(-50%) rotate(0deg);
+    color: #333;
+    text-align: center;
+    font-size: 1.5rem;
+    content: '+';
+}
+
+.accordion-box {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    background-color: #fff;
+    transition: all .5s;
+}
+
+.accordion-check:checked~.accordion-box {
+    height: auto;
+    opacity: 1;
+    padding: 1rem;
+}
+
+.accordion-check:checked+.accordion-label:after {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+
+.accordion-box p {
+    line-height: 1.5;
+}
+
+.img-pic1{
+margin: 5px;
+width: 40%;
+height: auto;
+}
+
+.menu-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.menu-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}

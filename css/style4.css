@@ -108,7 +108,9 @@ background-color: #fdfdfd;
 #trtai h4,
 #trspecial h4{
   font-size: 20px;
-  padding-bottom: 10px;}
+  padding: 10px;
+text-align: center;
+}
 
 
 
