@@ -208,19 +208,26 @@ font-size: 15px;
   margin: 0 auto;
 }
 
+
+.underline{
+  text-align: center;
+  margin: 0 auto;
+}
+
 .introduce strong{
-  font-size: 18px;
+  font-size: 20px;
     color: #333;
   font-weight: 700;
 }
 
 
 .introduce p {
-  text-align: left;
     line-height: 1.8;
     color: #333;
     font-size: 15px;
+    margin-bottom: 10px;
 }
+
 
 .introduce-box{
   text-align: center;
@@ -330,6 +337,7 @@ article p{
 }
 
 .point h2{
+  margin-top: 50px;
     position: relative;
     z-index: 2;
 }
