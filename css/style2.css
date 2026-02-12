@@ -265,16 +265,17 @@ article p{
 
 .recommend{
   padding: 18px;
+  margin: auto;
 }
 .recommend ul{
     list-style: none;
-  text-align: center;
-
 }
 
 
 .recommend-box li{
+
     display: flex;
+    justify-content: center;
     align-items: center;
     column-gap: 8px;
     color: #030303;
@@ -285,8 +286,8 @@ article p{
 .recommend-box li::before {
     width: 0.8em;
     height: 0.4em;
-    border-bottom: 4px solid #321111;
-    border-left: 4px solid #321111;
+    border-bottom: 4px solid #302305;
+    border-left: 4px solid #302305;
     transform: rotate(-45deg) translate(2px, -2px);
     content: '';
 }

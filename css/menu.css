@@ -38,6 +38,7 @@ text-shadow: 0 2px 2px#bbbbbb;
 }
 
 .menulist{
+    margin: 100px 0;
   background-color: rgb(255, 255, 255);
   padding: 0px 10px;
 }
@@ -65,7 +66,7 @@ text-shadow: 0 2px 2px#bbbbbb;
 }
 .menu-accordion {
     box-shadow: #33270f 0px 4px 6px -1px, #33270f 0px 2px 4px -1px;
-    background: #e8dab2;
+    background: #dad3c0;
     padding: 1rem;
 margin-bottom: 20px;
     display: flex;
@@ -83,14 +84,15 @@ margin-bottom: 20px;
 }
 
 .accordion-label {
+    width: 60%;
     box-shadow: 2px 5px 5px #605841;
     position: relative;
     display: block;
     cursor: pointer;
-    padding: 0.5rem;
-    background-color: #cfaf74;
-    color: #333;
-    font-size: 1rem;
+    padding: 0.8em;
+    background-color: #8c7f5d;
+    color: #ffffff;
+    font-size: 0.8rem;
     line-height: 1.5;
 }
 
@@ -98,8 +100,8 @@ margin-bottom: 20px;
     position: absolute;
     top: 50%;
     right: 0px;
-    height: 100%;
-    width: 40px;
+    height: auto;
+    width: 50px;
     transform: translateY(-50%) rotate(0deg);
     color: #333;
     text-align: center;
@@ -146,5 +148,5 @@ height: auto;
 .menu-right {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 30px;
 }

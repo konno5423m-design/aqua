@@ -197,6 +197,18 @@ width: 45%;
     gap: 1.5rem;
   }
 
+.accordion-label {
+    width: 100%;
+    box-shadow: 2px 5px 5px #605841;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding: 0.8em;
+    background-color: #5a554c;
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.5;
+}
 
   .hamburger {
     display: none;

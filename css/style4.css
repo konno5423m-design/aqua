@@ -63,24 +63,22 @@
 .link{
   box-shadow: #727272 0px 4px 6px -1px, #727272 0px 2px 4px -1px;
 background-color: #fdfdfd;
-	position: absolute;
 	padding-left: 1.5em;
+  border-radius: 10px;
     text-decoration: none;
     height: 50px;
 }
 
-.link::after{
-	position: absolute;
-	font-family: "Font Awesome 5 Free";
-	content: "\f138";
-	left: 0;
-	top: 0;
-	font-weight: 900;
-	font-size: 1em;
-	color: #d99227;
-
+.link2{
+  border-radius: 10px;
+  box-shadow: #727272 0px 4px 6px -1px, #727272 0px 2px 4px -1px;
+  text-align: center;
 }
 
+.link2 a{
+    text-decoration: none;
+    height: 50px;
+}
 .tell{
   margin-top: 20px;
 }
@@ -100,6 +98,7 @@ background-color: #fdfdfd;
 #trbody h3,
 #trtai h3,
 #trspecial h3{
+    background: linear-gradient(transparent 70%, #a7d6ff 70%);
   font-size: 22px;
   padding-bottom: 20px;
   text-align: center;
@@ -131,7 +130,7 @@ background-color: #fdfdfd;
   background-color: rgb(255, 255, 255);
   box-shadow: #31190c 0px 4px 6px -1px, #31190c 0px 2px 4px -1px;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   padding: 20px;
 }
 
