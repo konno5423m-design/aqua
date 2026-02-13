@@ -106,16 +106,20 @@
     gap: 15;
   }
 
+  .face{
+    position: relative;
+  }
 #face-pic{
   margin: 0px;
   width: 200px;
     height: auto;
-  display: block;
   padding:0px;
 }
 
 #yoyaku{
   font-size: 30px;
+padding-top: 30px;
+
 }
 
 .carousel2 {
