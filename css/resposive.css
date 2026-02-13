@@ -99,7 +99,24 @@
     display: none;
   }
   
+  #shop2{
+    font-size: 50px;
+  }
+  .face-item{
+    gap: 15;
+  }
 
+#face-pic{
+  margin: 0px;
+  width: 200px;
+    height: auto;
+  display: block;
+  padding:0px;
+}
+
+#yoyaku{
+  font-size: 30px;
+}
 
 .carousel2 {
     height: auto;

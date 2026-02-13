@@ -159,7 +159,6 @@ display: flex;
   font-family: "Noto Serif JP", serif;
 
   font-size: 38px;
-    margin-bottom: 10px;
     margin-left: 10px;
   color: #111;
   text-shadow: 1px 2px 3px rgba(81, 81, 81, 0.75);
@@ -186,9 +185,11 @@ font-size: 15px;
 
 
 #face-pic{
-  width: 100px;
+  margin: 0px;
+  width: 150px;
     height: auto;
   display: block;
+  padding:0px;
 }
 
 .top-section{
