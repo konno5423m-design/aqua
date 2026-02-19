@@ -1,3 +1,8 @@
+a:hover{
+  opacity: 0.6;
+}
+
+
 .reserved {
   position: fixed;
   bottom: calc(10px + env(safe-area-inset-bottom));
