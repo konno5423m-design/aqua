@@ -292,9 +292,12 @@ article p{
     transform: rotate(-45deg) translate(2px, -2px);
     content: '';
 }
+
 .recommend-item img{
+  margin-bottom: 0px;
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .recommend-text{
