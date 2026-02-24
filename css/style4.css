@@ -95,16 +95,14 @@ background-color: #fdfdfd;
     padding: 10px 20px;
   }
 
-#trbody h3,
-#trspecial h3{
+#trbody h3{
     background: linear-gradient(transparent 70%, #a7d6ff 70%);
   font-size: 22px;
   padding-bottom: 20px;
   text-align: center;
 }
 
-#trbody h4,
-#trspecial h4{
+#trbody h4{
   font-size: 20px;
   padding: 10px;
 text-align: center;
@@ -112,8 +110,7 @@ text-align: center;
 
 
 
-#trbody img,
-#trspecial img{
+#trbody img{
   width: 60%;
   height: auto;
   display: block;

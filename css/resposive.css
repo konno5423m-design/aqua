@@ -150,10 +150,14 @@ padding-top: 30px;
   background-size: 100%;
 }
 .voice-card{
-
+  margin-left: 50%;
+text-align: center;
     display: flex;
 }
 
+.card{
+  margin: 10px 30px;
+}
 
 .recommend-text{
   width: 55%;
