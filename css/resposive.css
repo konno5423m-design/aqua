@@ -219,9 +219,10 @@ width: 45%;
     gap: 1.5rem;
   }
 
+  
  .accordion {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 2列 */
+    grid-template-columns: repeat(2, 1fr); /* 2列 */
     gap: 1.5rem;
   }
 

@@ -28,6 +28,19 @@ text-shadow: 0 2px 2px#bbbbbb;
 
 }
 
+#syousai{
+    text-align: right;
+    margin-right: 20px;
+  text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    }
+
+
+
 .menulist h2::after {
   content: "";
   display: block;
@@ -150,3 +163,43 @@ height: auto;
     flex-direction: column;
     gap: 30px;
 }
+.menu-top{
+    margin-left: auto;
+}
+
+#trbody h3{
+    background: linear-gradient(transparent 70%, #a7d6ff 70%);
+  font-size: 22px;
+  padding-bottom: 1px;
+  text-align: center;
+
+}
+
+#trbody h4{
+  font-size: 20px;
+  padding: 10px;
+text-align: center;
+}
+
+
+
+#trbody img{
+  width: 60%;
+  height: auto;
+  display: block;
+}
+
+.noaccordion{
+  display: block;
+  margin-bottom: 50px;
+}
+
+.nomenu-accordion{
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  box-shadow: #31190c 0px 4px 6px -1px, #31190c 0px 2px 4px -1px;
+  padding: 20px;
+  margin-bottom: 60px;
+  padding: 20px;
+}
+

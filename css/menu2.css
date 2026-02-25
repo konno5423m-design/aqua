@@ -1,5 +1,9 @@
-#carouselmenu{
-    height: 200px;
+.menu-visual {
+    margin-top: 80px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    background-position: center;
 }
 
 
