@@ -211,7 +211,7 @@ padding: 30px 0;
 .hasira-title {
 
   font-family: "Noto Serif JP", serif;
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 600;
   color: #241a0c;
   font-weight: bold;
@@ -264,13 +264,44 @@ padding: 30px 0;
 }
 
 .introduce-text{
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 400;
     color: #333;
     line-height: 1.5;
     font-style: italic;
+
+  position: relative;
+  display: inline-block;
+  padding: 0 45px;
 }
- 
+.introduce-text:before, .introduce-text:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background-color: black;
+}
+
+.introduce-text:before, 
+.introduce-text:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 44px;
+  height: 2px;
+  background-color: black;
+  -webkit-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+}
+.introduce-text:before {
+  left:0;
+}
+.introduce-text:after {
+  right: 0;
+}
 
 
 .contener1{
