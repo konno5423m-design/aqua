@@ -313,7 +313,7 @@ font-size: 20px;
 }
 
 .introduce-text{
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400;
     color: #333;
     line-height: 1.5;
@@ -342,7 +342,7 @@ font-size: 20px;
 
 
 .recommend{
-  padding: 18px;
+  padding: 16px;
   margin: auto;
   
 }
@@ -359,7 +359,7 @@ font-size: 20px;
     column-gap: 8px;
     color: #030303;
     padding-bottom: 20px;
-      font-size: 17px;
+      font-size: 16px;
 }
 
 .recommend-item img{

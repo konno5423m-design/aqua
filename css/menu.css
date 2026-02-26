@@ -31,7 +31,6 @@ text-shadow: 0 2px 2px#bbbbbb;
 #syousai{
     text-align: right;
     margin-right: 20px;
-  text-decoration: none;
     color: #333;
     font-size: 18px;
     font-weight: bold;
@@ -95,7 +94,6 @@ margin-bottom: 20px;
 }
 
 .accordion-item a{
-            text-decoration: none;
             color: #333;
 
 }
