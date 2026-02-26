@@ -216,10 +216,10 @@ font-size: 20px;
 }
 .top-h1{
   font-weight: 700;
-  font-size: 20px;
+  font-size: 22px;
  position: relative;
   display: inline-block;
-  padding: 1rem 2.5rem;
+  padding: 20px 30px; 
   margin: 0;
   background: #e28f00;
   color: #2c2c2c;
@@ -260,7 +260,7 @@ font-size: 20px;
 .hasira-title {
 
   font-family: "Noto Serif JP", serif;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 600;
   color: #241a0c;
   font-weight: bold;
@@ -275,7 +275,7 @@ font-size: 20px;
     z-index: -1;
     bottom: 10px;
     color: #f5e7d6;
-    font-size: 3em;
+    font-size: 2em;
     line-height: 1;
     content: attr(data-number);
     pointer-events: none;
@@ -337,20 +337,22 @@ font-size: 20px;
   padding: 10px auto;
       background-color: #ffffff;
         border-radius: 10px;
+        
 }
 
 
 .recommend{
   padding: 18px;
   margin: auto;
+  
 }
 .recommend ul{
     list-style: none;
+
 }
 
 
 .recommend-box li{
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -358,15 +360,6 @@ font-size: 20px;
     color: #030303;
     padding-bottom: 20px;
       font-size: 17px;
-}
-
-.recommend-box li::before {
-    width: 0.8em;
-    height: 0.4em;
-    border-bottom: 4px solid #302305;
-    border-left: 4px solid #302305;
-    transform: rotate(-45deg) translate(2px, -2px);
-    content: '';
 }
 
 .recommend-item img{
@@ -377,6 +370,7 @@ font-size: 20px;
 }
 
 .recommend-text{
+
   padding: 20px 10px;
   font-size: 16px;
     color: #333;
