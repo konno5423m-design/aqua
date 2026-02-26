@@ -1,67 +1,39 @@
-const target = document.querySelector('#about');
-const reserved = document.querySelector('.reserved');
-
-if (target && reserved) {
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        reserved.classList.remove('is-show');
-      } else {
-        reserved.classList.add('is-show');
-      }
-    });
-  }, {
-    rootMargin: '-80px 0px 0px 0px', // ← header分ずらす
-    threshold: 0
-  });
-
-  observer.observe(target);
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   const reserved = document.querySelector(".reserved");
+  const about = document.querySelector("#about");
   const footer = document.querySelector("footer");
+  const menu = document.querySelector("#menulist");
 
-  if (!reserved || !footer) return;
+  if (!reserved) return;
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          reserved.classList.add("is-hide-footer");
-        } else {
-          reserved.classList.remove("is-hide-footer");
-        }
-      });
-    },
-    {
-      root: null,
-      threshold: 0
-    }
-  );
-
-  observer.observe(footer);
-
-
-  
-});
-
-const menuSection = document.querySelector('#menulist');
-const cta = document.querySelector('.reserved');
-
-const observer = new IntersectionObserver(
-  (entries) => {
+  const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        cta.classList.add('cta-hide');
-      } else {
-        cta.classList.remove('cta-hide');
-      }
-    });
-  },
-  {
-    threshold: 0.2
-  }
-);
 
-observer.observe(menuSection);
+      if (entry.target === about) {
+        reserved.classList.toggle("is-show", !entry.isIntersecting);
+      }
+
+      if (entry.target === footer) {
+        reserved.classList.toggle("is-hide-footer", entry.isIntersecting);
+      }
+
+      if (entry.target === menu) {
+        reserved.classList.toggle("cta-hide", entry.isIntersecting);
+      }
+
+    });
+
+    // ← AOSに再計算させる
+    if (typeof AOS !== "undefined") {
+      AOS.refresh();
+    }
+
+  }, {
+    threshold: 0,
+    rootMargin: "-80px 0px 0px 0px"
+  });
+
+  if (about) observer.observe(about);
+  if (footer) observer.observe(footer);
+  if (menu) observer.observe(menu);
+});

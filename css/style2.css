@@ -197,7 +197,7 @@ font-size: 20px;
 }
 
 .top-h1-border{
-  margin: 0 30px;
+  margin: -30px;
   background-color: #fff;
   padding: 30px 0;
 }
@@ -208,20 +208,16 @@ font-size: 20px;
 .introduce{ 
   z-index: 2;
   background-color: #ceb998;
-   padding:30px 0 30px;
-}
-.introduce-box {
-  overflow: visible;
-  padding-bottom: 0;
+  
 }
 .top-h1{
   font-weight: 700;
   font-size: 22px;
  position: relative;
   display: inline-block;
-  padding: 20px 30px; 
+padding: 20px;
   margin: 0;
-  background: #e28f00;
+  background: #8a6d3b;
   color: #2c2c2c;
   z-index: 1;
 
@@ -234,21 +230,21 @@ font-size: 20px;
 }
 
 .top-h1::before {
-  bottom: -10px;
+  bottom: -20px;
   left: 0;
   width: 0;
   height: 0;
-  border-top: 10px solid #ba7c08;
-  border-left: 10px solid transparent;
+  border-top: 20px solid #2c2c2c;
+  border-left: 20px solid transparent;
 }
 
 .top-h1::after {
   right: 0;
-  bottom: -10px;
+  bottom: -20px;
   width: 0;
   height: 0;
-  border-top: 10px solid #ba7c08;
-  border-right: 10px solid transparent;
+  border-top: 20px solid #2c2c2c;
+  border-right: 20px solid transparent;
 }
 .highlight{
   font-size: 25px;
@@ -316,12 +312,12 @@ font-size: 20px;
   font-size: 18px;
   font-weight: 400;
     color: #333;
-    line-height: 1.5;
     font-style: italic;
-
+  padding: 0 4px;
+  background: linear-gradient(transparent 60%, #fff493 60%);
+  text-align: center;
   position: relative;
   display: inline-block;
-  padding: 0 45px;
 }
 
 

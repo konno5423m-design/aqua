@@ -1,16 +1,14 @@
 .last{
-
   text-align: center;
   padding-top: 50px;
       background-color: #ceb998;
-
+  border-radius: 10px;
 }
 
 
 
 .last-item{
       position: relative;
-  z-index: 2;
    background: #fdfdfd;
   border-radius: 82% 80% 68% 60% / 60% 75% 75% 60%;
   padding: 50px 20px;
@@ -100,7 +98,7 @@ background-color: #fdfdfd;
 }
 
 .last-cta h2 {
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 15px;
 }
 

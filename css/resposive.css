@@ -443,4 +443,10 @@ font-size: 18px;
     font-weight: 900;
 }
 
+.splide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 }
