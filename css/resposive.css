@@ -131,9 +131,10 @@ font-size: 18px;
     font-size: 16px;
   }
 .pc-right {
+  text-align: left;
   display: flex;
-  margin-right: 50px;
-  padding: 30px 50px 10px 0;
+  margin-right: 0px;
+  padding: 30px 0;
 }
 
 #body-pc-title {
