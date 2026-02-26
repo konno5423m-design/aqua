@@ -37,6 +37,7 @@ text-shadow: 0 2px 2px#bbbbbb;
     font-weight: bold;
     display: block;
     margin-top: 10px;
+    text-decoration: none;
     }
 
 
@@ -90,7 +91,19 @@ margin-bottom: 20px;
 
 .accordion-item {
     margin-bottom: 0.5rem;
+    text-align: center;
+
 }
+
+.accordion-item a{
+            text-decoration: none;
+
+}
+
+.accordion-item a:visited{
+    color: #333;
+}
+
 
 .accordion-check {
     display: none;
