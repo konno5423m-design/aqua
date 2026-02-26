@@ -196,16 +196,66 @@ font-size: 20px;
   padding-bottom: 50px;
 }
 
+.top-h1-border{
+  margin: 0 2rem;
+  background-color: #fff;
+  padding: 30px 0;
+}
 
 
 
 
 .introduce{ 
-  margin: 0;
   z-index: 2;
-   background: #fdfdfd;
-   padding-bottom: 30px;
+  background-color: #ceb998;
+   padding:30px 0 30px;
 }
+.introduce-box {
+  overflow: visible;
+  padding-bottom: 0;
+}
+.top-h1{
+  font-weight: 700;
+  font-size: 20px;
+ position: relative;
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  margin: 0;
+  background: #e28f00;
+  color: #2c2c2c;
+  z-index: 1;
+
+}
+
+.top-h1::before,
+.top-h1::after {
+  position: absolute;
+  content: '';
+}
+
+.top-h1::before {
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 10px solid #ba7c08;
+  border-left: 10px solid transparent;
+}
+
+.top-h1::after {
+  right: 0;
+  bottom: -10px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid #ba7c08;
+  border-right: 10px solid transparent;
+}
+.highlight{
+  font-size: 25px;
+    color: #ffffff;
+    font-weight: 900;
+}
+
 
 .hasira-title {
 
@@ -233,7 +283,7 @@ font-size: 20px;
 
 .underline{
   text-align: center;
-  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .introduce strong{
@@ -255,7 +305,7 @@ font-size: 20px;
 .hasira{
   width: 250px;
   height: auto;
-  margin: 10px auto;
+  margin: 20px auto;
 }
 
 .hasira-box{

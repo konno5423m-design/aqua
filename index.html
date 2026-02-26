@@ -30,8 +30,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Nunito:wght@700&family=Montserrat:wght@700&display=swap" rel="stylesheet"><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -64,8 +63,10 @@
       今すぐ予約<br><p class="reserved-text">営業時間 9:00~23:00</p>
     </a>
     <a href="https://page.line.me/370wkhgr" id="line" class="navi2">
-      <img src="image/LINE_Brand_icon.png" id="line-top">
+      <img src="image/LINE_Brand_icon.png" alt="LINEアイコン">
     </a>
+     </div>
+
 <div class="hamburger">
 		<input id="hamburger1" type="checkbox" class="input-hidden">
 		<label for="hamburger1" class="hamburger-demo-switch hamburger-demo-switch1">
@@ -85,8 +86,9 @@
     <li><a href="menu.html">メニュー＆料金表</a></li>
       <li><a href="https://app.squareup.com/appointments/book/v9w7v07uu9c13n/LM4VRB598K807/start" class="btn-contact-top2"> 
       今すぐ予約
-    </a></li>
-             <li><a href="https://page.line.me/370wkhgr" id="line">
+    </a>
+  </li>
+             <li><a href="https://page.line.me/370wkhgr" >
       <img src="image/LINE_Brand_icon.png" id="line-top"></a></li>
 
   </ul>
@@ -98,7 +100,7 @@
   <div class="track">
   <div class="slide"><img src="image/top.webp"></div>
   <div class="slide"><img src="image/top2.JPEG"></div>
-  <div class="slide"><img src="image/off.png"></div>
+  <div class="slide"><a  href="https://page.line.me/370wkhgr"><img src="image/off.png"></a></div>
 </div>
   <button class="prev"></button>
   <button class="next"></button>
@@ -149,8 +151,9 @@
 
 <section class="introduce-box" >
   <div class="introduce">
-  <h1>大阪市住吉区でマッサージをお探しの方は<br><span class="highlight">リラクサロンあくあ</span>におまかせください</h1>
-<h2>当店の特徴</h2>
+  <h1 class="top-h1">大阪市住吉区のマッサージサロンなら<br><span class="highlight">リラクサロンあくあ</span></h1>
+<div class="top-h1-border">
+  <h2>当店の特徴</h2>
  <div class="underline" >
   <div class="hasira-box" data-aos="zoom-in">
     <h3 class="hasira-title" data-number="01">もみほぐし × ストレッチ</h3>
@@ -158,7 +161,7 @@
        <p>本場タイ古式の
          ストレッチを取り入れた施術</p>
 
-    <img src="image/hasira/sutoretti.webp" alt="ストレッチの画像" class="hasira">
+    <img src="image/hasira/sutoretti.webp" alt="ストレッチ施術の画像" class="hasira">
   </div>
   <div class="hasira-box" data-aos="zoom-in">
 
@@ -168,16 +171,16 @@
   <img src="image/hasira/taikousiki.webp" alt="タイの画像" class="hasira">
   </div>
 
-  <div class="hasira-box">
+  <div class="hasira-box" data-aos="zoom-in">
     <h3 class="hasira-title" data-number="03">最適なオーダーメイド施術</h3>
           <p>お客様の体調やご要望に合わせた施術</p>
 
-      <img src="image/hasira/hutyou.webp" alt="オーダーメイド施術の画像" class="hasira">
+      <img src="image/hasira/hutyou.webp" alt="さまざまな症状の人たち" class="hasira">
 </div>
 </div>
-  <div class="introduce-text"><br>施術後のすっきり感を<br>
+  <div class="introduce-text"><p>施術後のすっきり感を<br>
   ぜひ一度ご体感ください。</p></div>
-
+</div>
 
 </section>
 
@@ -289,7 +292,7 @@
 
 <section class="menulist" id="menulist">
 <h2>メニュー/料金表</h2>
-<div class="noaccordion">
+<div class="noaccordion" id="bodysp">
   <div class="nomenu-accordion" id="trbody" aos="fade-up">
     <div class="noaccordion-item">
             <h3>全身のお疲れを癒したい方</h3>
@@ -312,6 +315,32 @@
 
   </div>
 
+  </div>
+</div>
+
+<div class="noaccordion-body-pc">
+  <div class="nomenu-accordion" id="trbody" aos="fade-up">
+    <div class="noaccordion-item-pc">
+            <h3>全身のお疲れを癒したい方</h3>
+<div class="pc-right">
+<img src="image/menu/heroimg.webp" class="img-pic1-pc" alt="全身もみほぐし">
+
+        <div class="menu-top">
+                  <a href="menu.html#menubody" id="body-pc-title"><h4 \>全身もみほぐし <i class="fas fa-chevron-circle-right"></i></h4></a>
+
+           <p>30分　3,000円</p>
+<p>45分　4,500円</p>
+<p><strong>60分　5,000円 <i class="far fa-hand-point-left"></i> オススメ！</strong></p>
+<p>90分　7,500円</p>
+<p>120分　10,500円</p>
+
+    
+
+        <a href="https://app.squareup.com/appointments/book/v9w7v07uu9c13n/LM4VRB598K807/start" class="btn-contact2">今すぐ予約</a>
+
+  </div>
+</div>
+  </div>
   </div>
 </div>
 <div class="accordion">
@@ -349,9 +378,27 @@
 
   </div>
 </div>  
-</div>  <div class="menu-accordion" id="trspecial">
+</div>
+  <div class="menu-accordion" id="trspecial">
     <div class="accordion-item">
-        <a href="menu.html#menuspecial"><h4>あくあスペシャル <i class="fas fa-chevron-circle-right"></i></h4></a>
+        <a href="menu.html#menuspecial" class="mt"><h4>タイ式小顔コース <i class="fas fa-chevron-circle-right"></i></h4></a>
+        <div class="noaccordion-box">
+<p>15分　3,000円</p>
+        </div>
+        </div>
+<div class="menu-bottom">
+  <img src="image/menu/face.jpg" class="img-pic1" alt="小顔マッサージ">
+
+  <div class="menu-right">
+        <a href="https://app.squareup.com/appointments/book/v9w7v07uu9c13n/LM4VRB598K807/start" class="btn-contact2">今すぐ予約</a>
+
+  </div>
+</div>  
+</div> 
+
+  <div class="menu-accordion" id="trspecial">
+    <div class="accordion-item">
+        <a href="menu.html#menuspecial" class="mt"><h4>あくあスペシャル <i class="fas fa-chevron-circle-right"></i></h4></a>
         <div class="noaccordion-box">
 <p>120分超え　11,000円</p>
         </div>
@@ -369,7 +416,7 @@
     <div class="menu-accordion" id="trset">
     <div class="accordion-item">
         <input class="accordion-check" id="accordion-2" type="checkbox">
-        <label class="accordion-label" for="accordion-2"><i class="far fa-lightbulb"></i> お得なセットコース 　全身＋足つぼ</label>
+        <label class="accordion-label" for="accordion-2"><i class="far fa-lightbulb" ></i> お得なセットコース <br>全身＋足つぼ</label>
         <div class="accordion-box">
 <p>(足)40分＋(体)30分　6,300円</p>
 <p>(足)40分＋(体)60分　8,500円</p>
@@ -381,7 +428,7 @@
         <img src="image/menu/set.jpg" class="img-pic1">
 
   <div class="menu-right">
-        <a href="menu.html#menutai"><p class="link2">おすすめセット<i class="fas fa-chevron-circle-right"></i></p></a>
+      <a href="menu.html#menutai"><p class="link2">おすすめセット<i class="fas fa-chevron-circle-right"></i></p></a>
 
         <a href="https://app.squareup.com/appointments/book/v9w7v07uu9c13n/LM4VRB598K807/start" class="btn-contact2">今すぐ予約</a>
 
@@ -392,7 +439,7 @@
 <div class="menu-accordion" id="trtai">
     <div class="accordion-item">
         <input class="accordion-check" id="accordion-4" type="checkbox">
-        <label class="accordion-label" for="accordion-4">タイ古式マッサージ【※前日までの予約限定】</label>
+        <label class="accordion-label" for="accordion-4" class="mt">タイ古式マッサージ<br>【※前日までの予約限定】</label>
         <div class="accordion-box">
           <p id="taiyoyaku"></p>
           <p>100分　8,000円</p>
@@ -418,17 +465,17 @@
         <input class="accordion-check" id="accordion-6" type="checkbox">
         <label class="accordion-label" for="accordion-6">オプションメニュー</label>
         <div class="accordion-box">
-          <p>顔つぼ　10分 1000円 ／ 15分 1500円</p>
-<p>ヘッド　10分 1000円 ／ 15分 1500円</p>
-<p>タイ古式小顔　15分 2500円 </p>
-<p>全コース延長　10分 1000円</p>
+          <p>顔つぼ／10分 1000円<br>15分 1500円</p>
+<p>ヘッド／10分 1000円 <br> 15分 1500円</p>
+<p>タイ古式小顔／15分 2500円 </p>
+<p>全コース延長／10分 1000円</p>
         </div>
         </div>
 <div class="menu-bottom">
   <img src="image/3/8.webp" class="img-pic1" alt="ストレッチポールを使う人">
 
   <div class="menu-right">
-    <a href="menu.html#menuoption"><p class="link2">こんな方へおすすめ<i class="fas fa-chevron-circle-right"></i></p></a>
+    <a href="menu.html#menuoption"><p class="link2">おすすめオプション<i class="fas fa-chevron-circle-right"></i></p></a>
         <a href="https://app.squareup.com/appointments/book/v9w7v07uu9c13n/LM4VRB598K807/start" class="btn-contact2">今すぐ予約</a>
 
   </div>

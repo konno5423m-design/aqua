@@ -57,6 +57,108 @@
 
 }
 
+@media (max-width: 750px) {
+  .noaccordion-body-pc{
+  display: none;
+
+  }
+}
+
+
+
+/* タブレット*/
+@media (min-width:750px){
+
+
+  .hamburger {
+    display: none;
+  }
+  
+  #navi1,
+  .navi2{
+    display: none;
+  }
+
+
+  .pc-nav {
+    display: block;
+font-size: 18px;
+  }
+  .pc-nav ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+  }
+  .pc-nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+
+  .main-text h2{
+    padding: 20px50px;
+        font-size: 3rem;
+  }
+  .main-text p{
+    padding: 50px;
+        font-size: 1.2rem;
+  }
+
+  .last-cta {
+    padding: 100px 20px;
+  }
+
+  .last-cta h2 {
+    font-size: 32px;
+  }
+
+  .cta-lead {
+    font-size: 16px;
+  }
+
+  .cta-buttons {
+    flex-direction: row;       /* 横並び */
+    justify-content: center;   /* 中央寄せ */
+  }
+
+  .btn-main,
+  .btn-line {
+    width: 280px;              /* ボタン幅固定 */
+    padding: 18px;
+    font-size: 16px;
+  }
+.pc-right {
+  display: flex;
+  margin-right: 50px;
+  padding: 30px 50px 10px 0;
+}
+
+#body-pc-title {
+  color: #2c2c2c;
+  text-decoration: none;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.pc-right p {
+  padding: 30px 30px  0;
+  font-size: 22px;
+  line-height: 1.3;
+}
+.img-pic1-pc {
+  margin: 30px;
+  max-width: 500px;
+  height: auto;
+}
+#bodysp{
+  display: none;
+}
+
+}
+
 
 /* PC */
 @media (min-width:992px){
@@ -150,9 +252,10 @@ padding-top: 30px;
   background-size: 100%;
 }
 .voice-card{
-  margin-left: 50%;
+  justify-content: center;
 text-align: center;
     display: flex;
+
 }
 
 .card{
@@ -299,5 +402,46 @@ font-size: 18px;
     padding: 18px;
     font-size: 16px;
   }
+.top-h1{
+  font-weight: 700;
+  font-size: 28px;
+ position: relative;
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  margin: 0;
+  background: #e28f00;
+  color: #2c2c2c;
+  z-index: 1;
+
+}
+
+.top-h1::before,
+.top-h1::after {
+  position: absolute;
+  content: '';
+}
+
+.top-h1::before {
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 10px solid #ba7c08;
+  border-left: 10px solid transparent;
+}
+
+.top-h1::after {
+  right: 0;
+  bottom: -10px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid #ba7c08;
+  border-right: 10px solid transparent;
+}
+.highlight{
+  font-size: 28px;
+    color: #ffffff;
+    font-weight: 900;
+}
 
 }

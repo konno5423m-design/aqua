@@ -37,7 +37,6 @@ text-shadow: 0 2px 2px#bbbbbb;
     font-weight: bold;
     display: block;
     margin-top: 10px;
-    text-decoration: none;
     }
 
 
@@ -97,6 +96,7 @@ margin-bottom: 20px;
 
 .accordion-item a{
             text-decoration: none;
+            color: #333;
 
 }
 
@@ -182,16 +182,15 @@ height: auto;
 
 #trbody h3{
     background: linear-gradient(transparent 70%, #a7d6ff 70%);
-  font-size: 22px;
+  font-size: 24px;
   padding-bottom: 1px;
   text-align: center;
 
 }
 
 #trbody h4{
-  font-size: 20px;
-  padding: 10px;
-text-align: center;
+    font-size: 24px;
+    text-align: center;
 }
 
 
@@ -216,3 +215,6 @@ text-align: center;
   padding: 20px;
 }
 
+.mt{
+    font-size: 22px;
+}

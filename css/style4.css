@@ -55,10 +55,6 @@
   line-height: 1.6;
 }
 
-.highlight{
-    color: #996011;
-    font-weight: bold;
-}
 
 .link{
   box-shadow: #727272 0px 4px 6px -1px, #727272 0px 2px 4px -1px;
@@ -70,15 +66,10 @@ background-color: #fdfdfd;
 }
 
 .link2{
-  border-radius: 10px;
-  box-shadow: #727272 0px 4px 6px -1px, #727272 0px 2px 4px -1px;
+  color:#31190c;
   text-align: center;
 }
 
-.link2 a{
-    text-decoration: none;
-    height: 50px;
-}
 .tell{
   margin-top: 20px;
 }

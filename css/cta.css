@@ -34,7 +34,7 @@ text-decoration: none;
 
 a.btn-contact2 {
 		text-decoration: none;
-	margin-bottom: 5px;
+	margin: 15px;
 	 display: inline-flex;
   align-items: center;
  display: block;
@@ -44,7 +44,7 @@ a.btn-contact2 {
   text-align: center;
   font-size: 15px;
   border-radius: 10px;
-  box-shadow: 0 6px 16px rgba(47, 32, 3, 0.55);
+  box-shadow: 0 4px 12px rgba(118, 116, 112, 0.55);
     height: 50px;
 
 }
@@ -175,6 +175,7 @@ font-size: 10px;
 
 #line-top{
     width: 45px;
+    margin: 10px;
 }
 
 
