@@ -96,9 +96,10 @@ text-shadow: 0 2px 2px#bbbbbb;
 
 .original-item {
     margin-top: 60px;
-    
 }
+
 .original {
+  margin:0 auto;
   width: 100%;
   height: auto;
   position: relative;
@@ -123,7 +124,7 @@ border-radius: 5px;
   align-items: center;
   gap: 16px;
   padding: 18px 15px;
-  width: 380px;
+  max-width: 380px;
   height: 150px;
   margin: 0 auto;
 }
