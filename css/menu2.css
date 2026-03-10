@@ -74,6 +74,12 @@ article p{
     line-height: 1.5;
 }
 
+.menu-top {
+    margin-top: 20px;
+}
+.menu-top p{
+    font-size: 22px;
+}
 .accordion {
     padding: 1rem;
 }
@@ -160,8 +166,7 @@ height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    gap: 1rem;
+margin:0 auto;
 }
 
 .menu-right {
@@ -202,4 +207,9 @@ height: auto;
 #menuoption{
   margin-top: -70px;
   padding-top: 70px;
+}
+
+.accodion-item h3{
+    background: linear-gradient(transparent 60%, yellow 30%);
+      display: inline-block;
 }
