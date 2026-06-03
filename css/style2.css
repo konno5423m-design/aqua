@@ -112,6 +112,7 @@
   z-index: 20;
   margin-top: 10px;
 text-align: center;
+background-image: url(image/gaikann2.webp);
 }
 face::before{
     content: "";
@@ -194,6 +195,15 @@ font-size: 20px;
   padding:0px;
 }
 
+#face-pic2{  
+  justify-content: center;
+  margin: 0px;
+  width: 60vw;
+  background-size: contain;
+    height: auto;
+  display: inline-flex;
+  padding:10px;
+}
 .top-section{
   padding-bottom: 50px;
 }

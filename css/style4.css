@@ -89,6 +89,8 @@ background-color: #fdfdfd;
   padding: 10px auto;
       background-color: #ffffff;
         border-radius: 10px;
+        text-align: center;
+        justify-content: center;
 }
 
 .last-cta {
